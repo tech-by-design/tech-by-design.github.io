@@ -1,8 +1,6 @@
 ---
 import { getEntries } from 'astro:content'
-
 const { categories } = Astro.props
-
 const cats = await getEntries(categories)
 ---
 
