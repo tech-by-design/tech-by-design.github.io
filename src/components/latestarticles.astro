@@ -1,0 +1,137 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import { Image } from 'astro:assets'
+import Categories from '../components/categories.astro'
+import { DefaultImage } from '../config'
+
+export interface Props {
+  posts: CollectionEntry<'blog'>[]
+}
+
+const { posts } = Astro.props
+
+const newestPost = posts[0]
+const otherPosts = posts.slice(1, 5)
+---
+
+<div class='bg-neutral dark:bg-neutral-500'>
+  <div class='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+    <div class='mx-auto max-w-2xl py-8 sm:py-12 lg:max-w-none lg:py-16'>
+      <div class='flex flex-row items-center'>
+        <h2 class='text-2xl font-extrabold text-spruce dark:text-orange-800 md:text-4xl'>
+          Our Latest Articles
+        </h2>
+        <a
+          href={import.meta.env.BASE_URL + 'blog'}
+          class='ml-4 mt-2 inline-block rounded-md bg-orange px-2 py-2 text-base font-bold text-spruce hover:bg-orange-800 dark:bg-orange-500 dark:text-black dark:hover:bg-orange-100 md:px-6 md:py-3 md:text-lg'
+        >
+          All Articles
+        </a>
+        <a
+          href={import.meta.env.BASE_URL + 'categories'}
+          class='ml-4 mt-2 inline-block rounded-md bg-orange-800 px-2 py-2 text-base font-bold text-neutral-500 hover:bg-orange-500 dark:bg-orange-900 dark:text-orange-800 dark:hover:bg-orange-100 md:px-6 md:py-3 md:text-lg'
+        >
+          Categories
+        </a>
+        <a
+          href={import.meta.env.BASE_URL + 'tags'}
+          class='ml-4 mt-2 inline-block rounded-md bg-orange-800 px-2 py-2 text-base font-bold text-neutral-500 hover:bg-orange-500 dark:bg-orange-900 dark:text-orange-800 dark:hover:bg-orange-100 md:px-6 md:py-3 md:text-lg'
+        >
+          Tags
+        </a>
+      </div>
+      <div class='mt-6 space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0 xl:grid-cols-3'>
+        <div class='relative mb-4 block rounded p-4 lg:mb-0 lg:p-0 xl:col-span-2'>
+          <a href={import.meta.env.BASE_URL + 'blog/' + newestPost.slug}>
+            <span class='sr-only'>{newestPost.data.title}</span>
+            {
+              newestPost.data.coverSVG ? (
+                <img
+                  src={newestPost.data.coverSVG.src}
+                  alt={newestPost.data.title + ' featured image'}
+                  class='h-64 w-full rounded-md bg-orange-800 object-cover dark:bg-orange-500 md:h-80'
+                  loading='lazy'
+                />
+              ) : (
+                <Image
+                  src={newestPost.data.coverImage || newestPost.data.socialImage || DefaultImage}
+                  alt={newestPost.data.title + ' featured image'}
+                  class='h-64 w-full rounded-md bg-orange-800 object-cover dark:bg-orange-500 md:h-80'
+                  loading='lazy'
+                />
+              )
+            }
+          </a>
+          <div class='mt-4'>
+            {newestPost.data.categories && <Categories categories={newestPost.data.categories} />}
+          </div>
+          <a href={import.meta.env.BASE_URL + 'blog/' + newestPost.slug}>
+            <h1
+              class='mt-2 text-4xl font-bold leading-tight text-spruce hover:text-orange-800 dark:text-orange-500 dark:hover:text-orange-100'
+            >
+              {newestPost.data.title}
+            </h1>
+          </a>
+          {
+            newestPost.data.pubDate && (
+              <p class='mb-4 text-gray-600 dark:text-gray-400'>
+                {newestPost.data.pubDate.toDateString()}
+              </p>
+            )
+          }
+          <p class='mb-4 text-gray-600 dark:text-gray-400'>
+            {newestPost.data.description}
+          </p>
+          <a
+            href={import.meta.env.BASE_URL + 'blog/' + newestPost.slug}
+            class='mt-2 inline-block rounded-md bg-orange px-6 py-3 text-spruce hover:bg-orange-800 dark:bg-orange-500 dark:text-black dark:hover:bg-orange-100'
+          >
+            Read more
+            <span class='sr-only'>{newestPost.data.title}</span>
+          </a>
+        </div>
+        <div class='w-full'>
+          {
+            otherPosts.map((post) => (
+              <div class='mb-10 w-full rounded md:grid md:grid-cols-3'>
+                <a href={new URL(import.meta.env.BASE_URL + 'blog/' + post.slug, Astro.url)}>
+                  {post.data.coverSVG ? (
+                    <img
+                      src={post.data.coverSVG.src}
+                      alt={post.data.title + ' featured image'}
+                      class='block h-64 w-full rounded-md bg-orange-800 object-cover p-4 dark:bg-orange-500 md:h-32 md:p-0 lg:block'
+                      loading='lazy'
+                    />
+                  ) : (
+                    <Image
+                      src={post.data.coverImage || post.data.socialImage || DefaultImage}
+                      alt={post.data.title + ' featured image'}
+                      class='block h-64 w-full rounded-md bg-orange-800 object-cover p-4 dark:bg-orange-500 md:h-32 md:p-0 lg:block'
+                      loading='lazy'
+                    />
+                  )}
+                </a>
+                <div class='rounded bg-neutral px-4 dark:bg-gray-800 md:col-span-2'>
+                  {post.data.categories && <Categories categories={post.data.categories} />}
+                  <a href={import.meta.env.BASE_URL + 'blog/' + post.slug}>
+                    <div class='text-xl font-semibold text-gray-800 dark:text-neutral-100 md:mt-1'>
+                      {post.data.title}
+                    </div>
+                  </a>
+                  {post.data.pubDate && (
+                    <p class='block text-sm text-gray-600 dark:text-gray-300'>
+                      {post.data.pubDate.toDateString()}
+                    </p>
+                  )}
+                  <p class='block text-sm text-gray-600 dark:text-gray-300 md:hidden'>
+                    {post.data.description}
+                  </p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

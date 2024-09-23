@@ -1,0 +1,61 @@
+---
+import TechBdHub from '../assets/tech-by-design/techbd-hub.png'
+import SharedServices from '../assets/svg/undraw/undraw_shared_workspace.svg'
+import DocumentsSvg from '../assets/svg/undraw/undraw_documents.svg'
+
+const callouts = [
+  {
+    name: 'Shared Services',
+    description:
+      'A statewide collaborative effort to share services across QEs to gain efficiency in medical record interoperability.',
+    imageSrc: SharedServices.src,
+    imageAlt: 'TailwindCSS drawing',
+    href: '/shared-services'
+  },
+  {
+    name: 'Tech by Design Hub',
+    description: 'Observability and traceability user interface built in conjunction with 1115 Waiver objectives',
+    imageSrc: TechBdHub.src,
+    imageAlt: 'Tech by Design Hub',
+    href: 'https://astro.build'
+  },
+  {
+    name: 'Documentation',
+    description: 'We strive to build as much in the open as we can, so check out our documentation pages to find more',
+    imageSrc: DocumentsSvg.src,
+    imageAlt: 'Core Web',
+    href: '/doc/introduction'
+  }
+]
+---
+
+<div class='bg-orange-800 dark:bg-orange-900'>
+  <div class='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+    <div class='mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32'>
+      <h2 class='text-4xl font-extrabold text-spruce'>More Info</h2>
+      <div class='mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0'>
+        {
+          callouts.map((callout) => (
+            <div class='group relative'>
+              <div class='relative h-80 w-full overflow-hidden rounded-lg bg-neutral sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 dark:bg-spruce sm:h-64'>
+                <img
+                  src={callout.imageSrc}
+                  alt={callout.imageAlt}
+                  class='h-full w-full object-contain object-center'
+                  loading='lazy'
+                />
+              </div>
+              <h3 class='mt-6 text-2xl text-spruce dark:text-orange-500'>
+                <a href={callout.href}>
+                  <span class='absolute inset-0' />
+                  {callout.name}
+                </a>
+              </h3>
+              <p class='text-base text-neutral-500 dark:text-neutral-100'>{callout.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>

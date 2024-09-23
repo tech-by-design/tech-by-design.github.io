@@ -1,0 +1,72 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const features = [
+  {
+    name: 'Collaboration',
+    description:
+      'We believe in the power of working closely with our network and stakeholders to foster shared success and ensure interoperability.',
+    icon: 'arrows-pointing-in'
+  },
+  {
+    name: 'Innovation',
+    description:
+      'We are committed to providing world-class, cutting-edge technology infrastructure and services',
+    icon: 'light-bulb'
+  },
+  {
+    name: 'Security',
+    description:
+      'Security is at the heart of everything we do, our solutions protect sensitive information and maintain the trust of our users',
+    icon: 'shield-check'
+  },
+  {
+    name: 'Efficiency',
+    description:
+      'We strive to deliver high-quality solutions that improve patient care, and drive cost efficiency, ultimately advancing the health and well-being of our communities',
+    icon: 'clock'
+  }
+]
+---
+
+<div class='bg-neutral-100 py-12 dark:bg-gray-800'>
+  <div class='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+    <div class='lg:text-center'>
+      <h2
+        class='text-base font-semibold uppercase tracking-wide text-orange dark:text-orange-500'
+      >
+        About Our Services
+      </h2>
+      <p
+        class='mt-2 text-3xl font-extrabold leading-8 tracking-tight text-neutral-500 dark:text-neutral-100 sm:text-4xl'
+      >
+        Tech by Design's Guiding Principles
+      </p>
+      <p class='mt-4 max-w-2xl text-xl text-gray-600 dark:text-gray-300 lg:mx-auto'>
+        These are a few of the traits that guide us in pursuit of our mission.
+      </p>
+    </div>
+
+    <div class='mt-10'>
+      <dl class='space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0'>
+        {
+          features.map((feature) => (
+            <div class='relative'>
+              <dt>
+                <div class='absolute flex h-12 w-12 items-center justify-center rounded-md bg-spruce text-neutral dark:bg-orange-500 dark:text-black'>
+                  <Icon class='h-6 w-6' aria-hidden='true' name={'heroicons:' + feature.icon} />
+                </div>
+                <p class='ml-16 text-lg font-medium leading-6 text-neutral-500 dark:text-gray-200'>
+                  {feature.name}
+                </p>
+              </dt>
+              <dd class='ml-16 mt-2 text-base text-gray-600 dark:text-gray-400'>
+                {feature.description}
+              </dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+  </div>
+</div>
