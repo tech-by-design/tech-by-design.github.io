@@ -57,6 +57,176 @@ const { frontmatter, schema = 'WebPage' } = Astro.props
         height: 400px;
       }
     </style>
+    <style is:global>
+      /* Register your custom font family and tell the browser where to find it. */
+      @font-face {
+        font-family: 'Indivisible';
+        src: url('../../public/fonts/Indivisible-ThinItalic.eot');
+        src: local('Indivisible Thin Italic'), local('Indivisible-ThinItalic'),
+            url('../../public/fonts/Indivisible-ThinItalic.eot?#iefix') format('embedded-opentype'),
+            url('../../public/fonts/Indivisible-ThinItalic.woff2') format('woff2'),
+            url('../../public/fonts/Indivisible-ThinItalic.woff') format('woff'),
+            url('../../public/fonts/Indivisible-ThinItalic.ttf') format('truetype');
+        font-weight: 100;
+        font-style: italic;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-MediumItalic.eot');
+          src: local('Indivisible Medium Italic'), local('Indivisible-MediumItalic'),
+              url('../../public/fonts/Indivisible-MediumItalic.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-MediumItalic.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-MediumItalic.woff') format('woff'),
+              url('../../public/fonts/Indivisible-MediumItalic.ttf') format('truetype');
+          font-weight: 500;
+          font-style: italic;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-Black.eot');
+          src: local('Indivisible Black'), local('Indivisible-Black'),
+              url('../../public/fonts/Indivisible-Black.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-Black.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-Black.woff') format('woff'),
+              url('../../public/fonts/Indivisible-Black.ttf') format('truetype');
+          font-weight: 900;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-RegularItalic.eot');
+          src: local('Indivisible Regular Italic'), local('Indivisible-RegularItalic'),
+              url('../../public/fonts/Indivisible-RegularItalic.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-RegularItalic.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-RegularItalic.woff') format('woff'),
+              url('../../public/fonts/Indivisible-RegularItalic.ttf') format('truetype');
+          font-weight: normal;
+          font-style: italic;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-Bold.eot');
+          src: local('Indivisible Bold'), local('Indivisible-Bold'),
+              url('../../public/fonts/Indivisible-Bold.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-Bold.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-Bold.woff') format('woff'),
+              url('../../public/fonts/Indivisible-Bold.ttf') format('truetype');
+          font-weight: bold;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-BoldItalic.eot');
+          src: local('Indivisible Bold Italic'), local('Indivisible-BoldItalic'),
+              url('../../public/fonts/Indivisible-BoldItalic.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-BoldItalic.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-BoldItalic.woff') format('woff'),
+              url('../../public/fonts/Indivisible-BoldItalic.ttf') format('truetype');
+          font-weight: bold;
+          font-style: italic;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-BlackItalic.eot');
+          src: local('Indivisible Black Italic'), local('Indivisible-BlackItalic'),
+              url('../../public/fonts/Indivisible-BlackItalic.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-BlackItalic.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-BlackItalic.woff') format('woff'),
+              url('../../public/fonts/Indivisible-BlackItalic.ttf') format('truetype');
+          font-weight: 900;
+          font-style: italic;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-Light.eot');
+          src: local('Indivisible Light'), local('Indivisible-Light'),
+              url('../../public/fonts/Indivisible-Light.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-Light.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-Light.woff') format('woff'),
+              url('../../public/fonts/Indivisible-Light.ttf') format('truetype');
+          font-weight: 300;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-SemiBoldItalic.eot');
+          src: local('Indivisible SemiBold Italic'), local('Indivisible-SemiBoldItalic'),
+              url('../../public/fonts/Indivisible-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-SemiBoldItalic.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-SemiBoldItalic.woff') format('woff'),
+              url('../../public/fonts/Indivisible-SemiBoldItalic.ttf') format('truetype');
+          font-weight: 600;
+          font-style: italic;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-LightItalic.eot');
+          src: local('Indivisible Light Italic'), local('Indivisible-LightItalic'),
+              url('../../public/fonts/Indivisible-LightItalic.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-LightItalic.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-LightItalic.woff') format('woff'),
+              url('../../public/fonts/Indivisible-LightItalic.ttf') format('truetype');
+          font-weight: 300;
+          font-style: italic;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-Medium.eot');
+          src: local('Indivisible Medium'), local('Indivisible-Medium'),
+              url('../../public/fonts/Indivisible-Medium.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-Medium.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-Medium.woff') format('woff'),
+              url('../../public/fonts/Indivisible-Medium.ttf') format('truetype');
+          font-weight: 500;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-SemiBold.eot');
+          src: local('Indivisible SemiBold'), local('Indivisible-SemiBold'),
+              url('../../public/fonts/Indivisible-SemiBold.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-SemiBold.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-SemiBold.woff') format('woff'),
+              url('../../public/fonts/Indivisible-SemiBold.ttf') format('truetype');
+          font-weight: 600;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-Thin.eot');
+          src: local('Indivisible Thin'), local('Indivisible-Thin'),
+              url('../../public/fonts/Indivisible-Thin.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-Thin.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-Thin.woff') format('woff'),
+              url('../../public/fonts/Indivisible-Thin.ttf') format('truetype');
+          font-weight: 100;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'Indivisible';
+          src: url('../../public/fonts/Indivisible-Regular.eot');
+          src: local('Indivisible Regular'), local('Indivisible-Regular'),
+              url('../../public/fonts/Indivisible-Regular.eot?#iefix') format('embedded-opentype'),
+              url('../../public/fonts/Indivisible-Regular.woff2') format('woff2'),
+              url('../../public/fonts/Indivisible-Regular.woff') format('woff'),
+              url('../../public/fonts/Indivisible-Regular.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+      }
+    </style>
     {
       frontmatter.extra?.includes('math') && (
         <link
