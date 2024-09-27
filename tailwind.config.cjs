@@ -3,6 +3,12 @@ module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   darkMode: 'class',
   theme: {
+    fontFamily:{
+      'sans': ['Indivisible'],
+      'serif': ['Indivisible'],
+      'mono': ['ui-monospace'],
+      'display': ['Indivisible'],
+    },
     extend: {
       colors: {
         "orange": {
@@ -27,11 +33,6 @@ module.exports = {
           500 : '#231F20' //black
         },
       },
-      fontFamily: {
-        sans: ['Indivisible'],
-        body: ['Indivisible'],
-        display: ['Indivisible']
-      }
     },
   },
   plugins: [
