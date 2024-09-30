@@ -1,65 +1,19 @@
 ---
 title: About
-description: Description of Hello Astro Starter
-pubDate: 2023-06-13T00:00:00.000Z
-coverSVG: ../../assets/svg/undraw/undraw_about_me.svg
-socialImage: ../../assets/undraw/undraw_about_me.png
+description: Learn more about Technology by Design
+pubDate: 2024-09-22T00:00:00.000Z
+coverSVG: ../../assets/tech-by-design/pri-logo_Full-Color.svg
+socialImage: ../../assets/tech-by-design/banner_spruce.png
 ---
 
-This is multi-purpose Astro starter template based on the following:
+## History
 
-- [Astro](https://astro.build/) as a modern static site generator
-- [TypeScript](https://www.typescriptlang.org/)
-- [TailwindCSS](https://tailwindcss.com) and [TailwindUI](https://tailwindui.com)
-- [Iconify](https://iconify.design/)
-- [Hero Patterns](https://heropatterns.com/)
-- [unDraw](https://undraw.co/) for illustrations
-- [Markdown](https://www.markdownguide.org/)
-- [MDX](https://mdxjs.com/)
-- [Markdoc](https://markdoc.dev)
-- [Schema.org](https://schema.org/) and [JSON for Linking Data](https://json-ld.org/), type-checked using [schema-dts](https://github.com/google/schema-dts)
-- [Open Graph](https://ogp.me/) used by [Facebook](https://developers.facebook.com/docs/sharing/webmasters/#markup)
-- [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
-- [AlpineJS](https://alpinejs.dev)
-- Local full text search using [Lunr](https://lunrjs.com)
-- Math equations using [KaTeX](https://katex.org) via [remark-math and rehype-katex](https://github.com/remarkjs/remark-math)
-- Diagrams using [Mermaid](https://mermaid-js.github.io/mermaid/#/), [Markmap](https://markmap.js.org) and [PlantUML](https://plantuml.com)
-- Open Street Map using [Leaflet](https://leafletjs.com/)
-- [reading-time](https://github.com/ngryman/reading-time)
-- [PhotoSwipe](https://photoswipe.com)
-- [exifr](https://mutiny.cz/exifr/)
-- [Swiper](https://swiperjs.com/)
-- [Remark Emoji](https://github.com/rhysd/remark-emoji)
+Technology by Design, or Tech by Design, was borne of a consortium of New York eHealth Collaborative and 4 health information exchanges in New York state - Bronx Rhio, HealtheConnections, HEALTHeLINK, and Rochester RHIO. The consortium is now the board that governs Tech by Design's by-laws and continues to play a major role in planning for implementation and adoption of objectives set forth for Technology by Design.
 
-It follows the [JAMstack architecture](https://jamstack.org) by automatically building a static version from the Git repository. The demo is deployed on [Github Pages](https://pages.github.com).
+### Primary Objective
 
-Hello Astro can used for any/all of the following:
+The primary objective that Technology by Design was created to acheive is to analyze requirements, procure tools, and implement systems that are both world-class and economically sustainable. The end goal is referred to as Tech by Design's Shared Infrastructure Platform and will be made available to all New York state's qualifying entities (QEs). Along with providing high-quality servies and reducing costs, Tech by Design's Shared Infrastructure Platform will allow partnering QEs to continue to innovate and meet the needs that are specific to each of thei local communities.
 
-- corporate/marketing site
-- blog
-- documentation site
-- portfolio site supporting photo galleries
+### Seconday Objective
 
-This starter is open source (MIT licence) - fork it and customise for your needs.
-
-## Features
-
-- Author content in a mix of Markdown, MDX and Markdoc
-- Full-featured blog with frontmatter (title, description, author, date, image, tags)
-- High performance low overhead with minimal Javascript (AlpineJS)
-- Full text client based search of blog pages via lunrjs (search index only loaded on first invocation of search on a page)
-- Index page and individual pages for authors, categories and tags, including pagination
-- Support for RSS feed, sitemap and robots.txt
-- SVG design (unDraw, Hero Patterns, Iconify)
-- Support for code syntax highlighting
-- Full SEO support including Open Graph, Twitter Cards and Schema.org via JSON-LD
-- Full support for light and dark UI modes, as well as following system preferences, in accordance to TailwindCSS recommendation
-- Customised 404 error page
-- Display math equations using KaTeX via remark-math/rehype-katex (enclosed in `$`...`$` or `$$`...`$$`)
-- Display Mermaid, Markmap, PlantUML diagrams (authored as a code block with language `mermaid`, `markmap` and `plantuml`)
-- Display map at geo coordinates and zoom level using `Map` component (need to also include `extra: ['map']` in frontmatter to load CSS/JS assets for page)
-- Calculates and show reading time for blog posts
-- CSS/JS assets of external libraries loaded only when needed on a per page and per package basis - no unnecessary bloat
-- Photo gallery and lightbox using PhotoSwipe (including display of EXIF tags)
-- Carousel component using Swiper
-- Documentation pages (modelled after astro docs starter but using Tailwind)
+While meeting the primary objective set out by the original consortium, it was also recognized that Tech by Design will be uniquely positioned to create new collaborative services that don't exist today. In doing so, Tech by Design will be able to implement new innovations that can be efficiently be made available to the entire state. One such example of this is sending HRSN screening documents through Tech By Design to the New York State data lake. This project is called the 1115 Waiver project and is already underway with expected launch in Q1 of 2025.
