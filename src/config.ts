@@ -39,7 +39,7 @@ export const NavigationLinks = [
   { name: 'Get Help', href: 'get-help' },
   { name: 'Articles', href: 'blog' },
   { name: 'Docs', href: 'doc/introduction' },
-  { name: 'Status', href: 'https://status.techbd.org', target: "_blank" }
+  { name: 'Status', href: 'https://status.techbd.org', target: "blank" }
 ]
 
 export const PAGE_SIZE = 6

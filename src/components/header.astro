@@ -45,7 +45,8 @@ import { Logo } from '../config'
               {
                 NavigationLinks.map((item) => (
                   <a
-                    href={import.meta.env.BASE_URL + item.href}
+                    href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
+                    target={item.target ? item.target : "_self"}
                     class={
                       (item.href.length > 0 && Astro.url.toString().includes(item.href)
                         ? 'bg-orange text-spruce dark:bg-orange-500'
