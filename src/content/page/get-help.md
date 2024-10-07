@@ -19,7 +19,7 @@ socialImage: ../../assets/tech-by-design/banner_spruce.png
 			<details>
 				<summary class="py-2 outline-none cursor-pointer focus:underline">How can I get technical assistance with questions about the 1115 Waiver Project?</summary>
 				<div class="px-4 pb-4">
-					<p>Check out our <a href="/blog/2024-09-30-how-to-get-help" target="_blank">blog post</a> which detail more information about this very topic.</p>
+					<p>Check out our <a href="/blog/2024-09-30-how-to-get-1115-help" target="_blank">blog post</a> which detail more information about this very topic.</p>
 				</div>
 			</details>
 			<details>
