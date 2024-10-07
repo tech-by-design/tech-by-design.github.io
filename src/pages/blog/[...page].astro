@@ -17,9 +17,9 @@ const { page } = Astro.props
 
 const frontmatter: CollectionEntry<'page'>['data'] = {
   title:
-    'Tech by Design Blog' +
+    'Tech by Design Articles' +
     (page.size < page.total ? ' (page ' + page.currentPage + ' of ' + page.lastPage + ')' : ''),
-  description: 'View our articles.',
+  description: 'We will periodically post articles to assist in our operational objectives and improve visibility. Find articles below that may be of interest or help to your interactions with us.',
   coverSVG: coverSVG,
   socialImage: socialImage
 }

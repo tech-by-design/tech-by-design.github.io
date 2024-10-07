@@ -3,8 +3,8 @@ title: How to Get Help for 1115 Waiver Project
 description: A guide on steps to take to get help for the 1115 project
 author: default
 pubDate: 2024-09-30T00:00:00.000Z
-coverSVG: ../../assets/svg/undraw/undraw_design_components.svg
-socialImage: ../../assets/undraw/undraw_design_components.png
+coverSVG: ../../assets/svg/undraw/undraw_right_direction.svg
+socialImage: ../../assets/undraw/undraw_right_direction.png
 categories:
   - information
 tags:

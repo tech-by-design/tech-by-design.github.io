@@ -36,8 +36,8 @@ export { default as DefaultImage } from './assets/undraw/undraw_my_feed.png'
 export const NavigationLinks = [
   { name: 'Home', href: '' },
   { name: 'About', href: 'about' },
-  { name: 'Get Help', href: 'contact' },
-  { name: 'Blog', href: 'blog' },
+  { name: 'Get Help', href: 'get-help' },
+  { name: 'Articles', href: 'blog' },
   { name: 'Docs', href: 'doc/introduction' }
 ]
 

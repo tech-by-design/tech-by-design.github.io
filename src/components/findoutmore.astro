@@ -29,10 +29,10 @@ const callouts = [
 ]
 ---
 
-<div class='bg-orange-800 dark:bg-orange-900'>
+<div class='bg-spruce'>
   <div class='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
     <div class='mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32'>
-      <h2 class='text-4xl font-extrabold text-spruce'>More Info</h2>
+      <h2 class='text-4xl font-extrabold text-orange'>More Info</h2>
       <div class='mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0'>
         {
           callouts.map((callout) => (
@@ -45,13 +45,13 @@ const callouts = [
                   loading='lazy'
                 />
               </div>
-              <h3 class='mt-6 text-2xl text-spruce dark:text-orange-500'>
+              <h3 class='mt-6 text-3xl text-neutral dark:text-orange-500'>
                 <a href={callout.href}>
                   <span class='absolute inset-0' />
                   {callout.name}
                 </a>
               </h3>
-              <p class='text-base text-neutral-500 dark:text-neutral-100'>{callout.description}</p>
+              <p class='text-base text-orange-200 dark:text-neutral-100'>{callout.description}</p>
             </div>
           ))
         }
