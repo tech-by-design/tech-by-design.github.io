@@ -6,10 +6,14 @@ coverSVG: ../../assets/tech-by-design/pri-logo_Full-Color.svg
 socialImage: ../../assets/tech-by-design/banner_spruce.png
 ---
 
-<section class="dark:bg-gray-100 dark:text-gray-800">
-	<div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
-		<h2 class="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">Frequent Help Topics</h2>
-		<div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 dark:divide-gray-300">
+## Philosophy
+
+Technology by Design believes in offering help publicly through a variety of resources. We strongly encourage you to use the Frequent Help Topics noted below as a starting point for finding the assistance that you may need. You are likely to find your answers in the topics below faster than you would sending us communication. We strive to continuously update and improve our help documentation here but also within the links and guides that follow. We appreciate the collaboration within self-service and documentation tools as that is most often the best way to ensure up-to-date information is available to all we partner with.
+
+## Frequent Help Topics
+<section>
+	<div class="container flex flex-col justify-center mx-auto">
+		<div class="flex flex-col divide-y divide-orange-300">
 			<details>
 				<summary class="py-2 outline-none cursor-pointer focus:underline">How do I participate in the Shared Services (aka Fusion) Project?</summary>
 				<div class="px-4 pb-4">
@@ -19,7 +23,7 @@ socialImage: ../../assets/tech-by-design/banner_spruce.png
 			<details>
 				<summary class="py-2 outline-none cursor-pointer focus:underline">How can I get technical assistance with questions about the 1115 Waiver Project?</summary>
 				<div class="px-4 pb-4">
-					<p>Check out our <a href="/blog/2024-09-30-how-to-get-1115-help" target="_blank">blog post</a> which detail more information about this very topic.</p>
+					<p>Check out our <a href="/blog/2024-09-30-how-to-get-1115-help" target="_blank">blog post</a> which provides more information about this topic.</p>
 				</div>
 			</details>
 			<details>
@@ -37,14 +41,31 @@ socialImage: ../../assets/tech-by-design/banner_spruce.png
 			<details>
 				<summary class="py-2 outline-none cursor-pointer focus:underline">How do I visit the Help Desk?</summary>
 				<div class="px-4 pb-4 space-y-2">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates aspernatur dolores in consequatur doloremque inventore reprehenderit, consequuntur perspiciatis architecto.</p>
-					<p>Sed consectetur quod tenetur! Voluptatibus culpa incidunt veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus autem eaque unde possimus quae.</p>
+					<p>The <a href="https://github.com/tech-by-design/help-desk-non-phi" target="_blank">Technology by Design Help Desk</a> is housed in a GitHub repository where we're leveraging many open source features to communicate and share helpful information with our partners.</p>
+					<p>Some useful areas within the GitHub repository are as follows:
+						<ul>
+							<li><a href="https://github.com/tech-by-design/help-desk-non-phi/issues" target="_blank">Issues</a>: an area where open work items have been submitted and are being worked.</li>
+							<li>
+								<a href="https://github.com/tech-by-design/help-desk-non-phi/discussions" target="_blank">Discussions</a>: multiple categories of communications between Technology by Design and our partners.
+							</li>
+							<li>
+								<a href="https://github.com/tech-by-design/help-desk-non-phi" target="_blank">Code</a>: our codebase has a readme file with helpful information as well as directories where non-phi files can be shared.
+							</li>
+						</ul>
+					</p>
 				</div>
 			</details>
             <details>
 				<summary class="py-2 outline-none cursor-pointer focus:underline">How do I get access?</summary>
 				<div class="px-4 pb-4">
-					<p>If you're looking for access to a particular system inside the Tech by Design ecosystem but running into a login that you don't have access to, please email <a href="mailto:help@techbd.org">help@techbd.org</a> and include your name, your work email, and give us a description of what you're trying to access.</p>
+					<p>If you're looking for access to a particular system inside the Tech by Design ecosystem but running into a login that you don't have access to, please visit <a href="/submit-form/access-request">this link</a> and complete the form to enter an access request.</p>
+				</div>
+			</details>
+            <details>
+				<summary class="py-2 outline-none cursor-pointer focus:underline">Not finding the help you need?</summary>
+				<div class="px-4 pb-4">
+					<p>If you still haven't found what you're looking for in the above topics and links, please visit <a href="/submit-form/technical-help">this link</a> and complete the form to try and get further help.</p>
+					<p>Please note that the most ideal path for you to get assistance is likely listed above, via the Help Desk or other means, and the form submission may not be immediately responded to.</p>
 				</div>
 			</details>
 		</div>

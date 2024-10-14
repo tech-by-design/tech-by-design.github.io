@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/base.astro'
+import type { CollectionEntry } from 'astro:content'
+import FormContainer from '../../components/form-container.astro'
+
+// const hasFormUrl = Astro.url.searchParams.has('formUrl');
+// const formUrl = Astro.url.searchParams.get('formUrl');
+
+export function getStaticPaths() {
+  return [
+    {params: {src: 'marketing-inquiry'}},
+    {params: {src: 'technical-help'}},
+    {params: {src: 'access-request'}},
+  ];
+}
+
+const { src } = Astro.params;
+
+let formUrl = '';
+
+switch(src) {
+    case 'marketing-inquiry':
+        //<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=MFPYgWAtWUys4kaU5vwKzX0pB2zNoHlEhpF5KIWcG6BUQU5LUE1aNDVWSVhGNzVCRENTTEwzS0I3VS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+        formUrl = "https://forms.office.com/Pages/ResponsePage.aspx?id=MFPYgWAtWUys4kaU5vwKzX0pB2zNoHlEhpF5KIWcG6BUQU5LUE1aNDVWSVhGNzVCRENTTEwzS0I3VS4u&embed=true"
+        break;
+    case 'technical-help':
+        //<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=MFPYgWAtWUys4kaU5vwKzX0pB2zNoHlEhpF5KIWcG6BUMFE3Q1ZVRDdaUzJIWDk2SkhWN1JJQUY2SS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+        formUrl = "https://forms.office.com/Pages/ResponsePage.aspx?id=MFPYgWAtWUys4kaU5vwKzX0pB2zNoHlEhpF5KIWcG6BUMFE3Q1ZVRDdaUzJIWDk2SkhWN1JJQUY2SS4u&embed=true"
+        break;
+    case 'access-request':
+        //<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=MFPYgWAtWUys4kaU5vwKzX0pB2zNoHlEhpF5KIWcG6BUNlFVNDQ3S1hGUFMyWEZTMEs1MVM1RjdITy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+        formUrl = "https://forms.office.com/Pages/ResponsePage.aspx?id=MFPYgWAtWUys4kaU5vwKzX0pB2zNoHlEhpF5KIWcG6BUNlFVNDQ3S1hGUFMyWEZTMEs1MVM1RjdITy4u&embed=true"
+        break;
+    default:
+        formUrl = ''
+        break;
+}
+
+const frontmatter: CollectionEntry<'page'>['data'] = {
+  title: 'Submit Form',
+  description: 'Thanks for visiting our digital contact card. See below to reach out to us in any of the methods listed.'
+}
+---
+
+
+<Base frontmatter={frontmatter} schema=''>
+    {formUrl ?
+        <FormContainer formSrc={formUrl}>
+        </FormContainer>
+    :
+        <div>{formUrl}</div>
+    }
+</Base>
+
+
