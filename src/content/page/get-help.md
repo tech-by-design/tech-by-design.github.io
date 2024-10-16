@@ -17,7 +17,7 @@ Technology by Design believes in offering help publicly through a variety of res
 			<details>
 				<summary class="py-2 outline-none cursor-pointer focus:underline">How do I participate in the Shared Services (aka Fusion) Project?</summary>
 				<div class="px-4 pb-4">
-					<p>There is a <a href="https://github.com/tech-by-design/shared-services-docs" target="_blank">GitHub Repository</a> with all the information you'll need to get involved in the Shared Services, aka Project Fusion.</p>
+					<p>There is a <a href="https://github.com/tech-by-design/fusion-planning" target="_blank">GitHub Repository</a> with all the information you'll need to get involved in the Shared Services, aka Project Fusion.</p>
 				</div>
 			</details>
 			<details>
