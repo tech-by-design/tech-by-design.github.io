@@ -1,29 +1,29 @@
 ---
 import TechBdHub from '../assets/tech-by-design/techbd-hub.png'
-import SharedServices from '../assets/svg/undraw/undraw_shared_workspace.svg'
-import DocumentsSvg from '../assets/svg/undraw/undraw_documents.svg'
+import Fusion from '../assets/tech-by-design/techbd-fusion.png'
+import DocumentsSvg from '../assets/tech-by-design/techbd-docs.png'
 
 const callouts = [
   {
-    name: 'Shared Services',
+    name: 'Fusion',
     description:
       'A statewide collaborative effort to share services across QEs to gain efficiency in medical record interoperability.',
-    imageSrc: SharedServices.src,
-    imageAlt: 'TailwindCSS drawing',
-    href: '/shared-services'
+    imageSrc: Fusion.src,
+    imageAlt: 'Tech by Design Fusion',
+    href: '/fusion'
   },
   {
-    name: 'Tech by Design Hub',
+    name: 'Hub',
     description: 'Observability and traceability user interface built in conjunction with 1115 Waiver objectives',
     imageSrc: TechBdHub.src,
     imageAlt: 'Tech by Design Hub',
     href: '/hub'
   },
   {
-    name: 'Documentation',
+    name: 'Docs',
     description: 'We strive to build as much in the open as we can, so check out our documentation pages to find more',
     imageSrc: DocumentsSvg.src,
-    imageAlt: 'Core Web',
+    imageAlt: 'Tech by Deisgn Docs',
     href: '/doc/introduction'
   }
 ]
@@ -41,7 +41,7 @@ const callouts = [
                 <img
                   src={callout.imageSrc}
                   alt={callout.imageAlt}
-                  class='h-full w-full object-contain object-center'
+                  class='h-full w-full object-contain object-center p-2'
                   loading='lazy'
                 />
               </div>
