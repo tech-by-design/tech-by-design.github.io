@@ -32,8 +32,8 @@ Technology by Design believes in offering help publicly through a variety of res
 					<p> The Tech by Design Hub currently has non-prod and prod URLs, all of which require permission to access. The following are the endpoints for each environment:
                         <ul>
                             <li><a href="https://synthetic.hub.devl.techbd.org/" target="_blank">Dev</a></li>
-                            <li><a href="https://synthetic.hub.stage.techbd.org/​" target="_blank">Staging</a></li>
-                            <li><a href="https://hub.techbd.org/" target="_blank">Production</a>​</li>
+                            <li><a href="https://synthetic.hub.stage.techbd.org/" target="_blank">Staging</a></li>
+                            <li><a href="https://phi.hub.qa.techbd.org/" target="_blank">QA</a>​</li>
                         </ul>
                     </p>
 				</div>
