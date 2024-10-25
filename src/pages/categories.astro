@@ -32,11 +32,11 @@ const categories = await getCollection('category')
           {
             categories.map((category) => (
               <div class='group relative'>
-                <div class='relative mb-4 h-80 w-full overflow-hidden rounded-lg bg-orange-800 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 dark:bg-orange sm:h-64'>
+                <div class='relative mb-4 h-80 w-full overflow-hidden rounded-lg bg-neutral sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 dark:bg-neutral-400 sm:h-64'>
                   <img
                     src={category.data.coverSVG.src}
                     alt={category.data.description}
-                    class='h-full w-full object-cover object-center'
+                    class='h-full w-full object-contain object-center'
                     loading='lazy'
                   />
                 </div>
