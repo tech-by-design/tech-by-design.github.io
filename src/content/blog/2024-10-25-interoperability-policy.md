@@ -13,25 +13,28 @@ tags:
 
 # Overview
 
-This post outlines Technology by Design's policy to handling data exchange and integration. As an organization we've decided to be **FHIR-native** in this area. The policy further establishes our commitment to leveraging existing standards, particularly HL7 FHIR, to ensure consistency, interoperability, and compliance across our technical landscape. The following guidelines are intended to create a strong, standards-based foundation that minimizes bespoke implementations, maximizes data interoperability, and ensures all customizations are fully documented and machine verifiable.
-
-By enforcing these policies, Technology by Design, Inc. aims to create an environment that promotes standards-based data exchange, interoperability, and regulatory compliance. The focus on HL7 FHIR, along with stringent requirements for documenting and validating custom data structures, ensures our technology solutions are robust, scalable, and aligned with industry best practices. The additional emphasis on error handling, security, testing, change management, interoperability, performance, governance, and education ensures a holistic and future-proof approach to data integration and management.
+This post outlines Technology by Design's policy to handling data exchange and integration. As an organization we've decided to be **FHIR-native** in this area. Our policy emphasizes using the HL7 FHIR standard to ensure our systems are consistent, interoperable, and compliant. By following established standards, we avoid custom solutions, making it easier to share data and meet regulatory requirements. Documenting and verifying all customizations ensures our solutions are reliable and scalable. Additionally, we focus on robust practices for error handling, security, testing, change management, and governance to maintain a strong, adaptable approach to data integration. 
 
 ## Key Policy Statements
 
 ### 1. Avoid Bespoke JSON or XML Payloads
 
-Technology by Design, Inc. strictly prohibits the creation of bespoke JSON or XML payloads when an existing standard, such as HL7 FHIR, can meet the requirements. Leveraging established standards ensures consistency, scalability, and compatibility with other systems in the healthcare ecosystem, reducing development and maintenance efforts.
+Technology by Design, Inc. prohibits the creation of bespoke payloads (JSON, XML, CSV, flat-file, or otherwise) when an existing standard, such as HL7 FHIR, can meet the requirements. Leveraging established standards ensures consistency, scalability, and compatibility with other systems in the healthcare ecosystem, reducing development and maintenance efforts.
 
 ### 2. Detailed Documentation for Non-Standard Payloads
 
-If no existing standard is available or appropriate for a given use case, the development team must create a detailed architecture document that includes the following:
+If no existing standard is available or is deemed inappropriate for a given use case, the development team proposing a non-standard payload must create a detailed architecture document that includes the following:
 
  - Standards Research: Clearly document what standards were evaluated.
 
 - Rationale for Not Using a Standard: Provide a detailed explanation of why available standards do not apply or are insufficient.
 
-- Bespoke Payload Requirements: If a bespoke payload is deemed necessary, it must include a machine attestable schema document using JSON Schema, Zod, or XSD. Additionally, an Implementation Guide (IG) must be provided to ensure that all stakeholders understand how the custom payload is used.
+- Bespoke Payload Requirements: If a bespoke payload (data format like CSV, Excel, JSON, XML) is deemed necessary: 
+  - An Implementation Guide (IG) must be provided to ensure that all stakeholders understand how the custom payload is used. 
+  - It must include a machine attestable schema document.
+    - A machine attestable schema document is a structured blueprint that describes the format and rules of a payload, often using technologies like JSON Schema, Zod, or XSD. 
+    - This document allows machines to validate that the payload conforms to expected standards automatically without needing human intervention to do the validation. 
+    - By ensuring data integrity, compatibility, and consistency, a machine attestable schema document is crucial for maintaining smooth communication between different systems. It helps developers understand how the payload (data being exchanged) should be structured, and ensures that all systems can correctly interpret and validate the information being exchanged. 
 
 No bespoke payload or schema will be accepted unless accompanied by a schema that allows machine attestation of content and data. This policy ensures that all custom data structures are rigorously defined, verifiable, and compliant with our standards for quality and interoperability.
 
