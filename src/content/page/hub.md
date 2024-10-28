@@ -49,7 +49,7 @@ curl -s https://raw.githubusercontent.com/tech-by-design/polyglot-prime/main/hub
 #### Need Help?
 
 If you are with an SCN:
-- Please direct quesitons to your QE contact or technical team.
+- Please direct questions to your QE contact or technical team.
 
 If you are with a QE:
 - Use our [Get Help](/get-help) page for self service resources on the Tech by Design Hub.
