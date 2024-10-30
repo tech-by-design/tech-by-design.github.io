@@ -25,7 +25,7 @@ The Hub user interface has multiple instances so it is important you choose the 
 ## $validate Endpoint
 
 If you're working on technical implementation and looking for the best place to attempt a test of *validation rules*, you can use the following endpoint:
-- https://phi.fhir.api.qa.techbd.org/Bundle/$validate
+- https://synthetic.fhir.api.stage.techbd.org/Bundle/$validate
 
 *Note*: this endpoint **will not** attempt to store or forward messages. This means messages sent to this endpoint won't be visible inside the Hub. The endpoint's purpose is to test your payloads against the FHIR validator to verify you're meeting the implementation guide rules as expected.
 
