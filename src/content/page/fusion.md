@@ -28,7 +28,7 @@ To request access to the Tech by Design Fusion Planning Discussions Forum, users
 
 QEs will be notified by email when the topics are posted to the discussion board and, in general, QEs will have 2 weeks from the date of the email to add comments to the discussions before they are closed.
 
-This process is defined further in this Advisory Forum Document (**Add Link)**
+This process is defined further in the [QE Advisory Forum post](/blog/2024-11-18-qe-advisory-forum).
 
 ## Project Management
 
