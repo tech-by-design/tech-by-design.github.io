@@ -16,7 +16,7 @@ Tech by Design has provided multiple resources for QEs to reference during the i
 ## QE Feedback
 
 **Fusion Discussion Forum**
-Tech by Design will leverage GitHub Discussions to gather comments from the QEs on various topics. Discussions will be posted and sent out to the Implementation Planning team for input from them as well as any SMEs in their organization. Topics Include:
+Tech by Design will leverage [GitHub Discussions](https://github.com/tech-by-design/fusion-planning/discussions) to gather comments from the QEs on various topics. Discussions will be posted and sent out to the Implementation Planning team for input from them as well as any SMEs in their organization. Topics Include:
 
 - Fusion Decisions made by Tech by Design
 - InterSystems Use Case Documentation
