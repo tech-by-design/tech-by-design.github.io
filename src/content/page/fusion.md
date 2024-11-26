@@ -55,3 +55,8 @@ If a QE user needs access, please email: access-request@techbd.org
 All Fusion requirements, which were gathered, discussed, and approved by the QEs prior to sending them out to prospective vendors via the RFP process, have been added into the Fusion Planning repository in GitHub. They can be accessed here: https://github.com/orgs/tech-by-design/projects/15
 
 If users have issues accessing, please use the access request form: https://techbd.org/submit-form/access-request/ 
+
+## Training
+Users from the QEs are encouraged to complete training and course work on the InterSystems Online Learning website. Recommendations of courses which should be completed will be updated periodically and posted on the Technology by Design website as **Articles**. As new ones are added, they will be linked on this page for ease of access. 
+
+- Article 1: [Overview of InterSystems Training Resources](https://techbd.org/blog/2024-11-26-intersystems-training-resources/)
