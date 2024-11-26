@@ -2,7 +2,7 @@
 title: Overview of InterSystems Training Resources (version 1) 
 description: Read about Intersystems training resources
 author: default
-pubDate: 2024-11-18T00:00:00.000Z
+pubDate: 2024-11-26T00:00:00.000Z
 coverSVG: ../../assets/tech-by-design/pri-logo_Full-Color.svg
 socialImage: ../../assets/tech-by-design/pri-logo_Full-Color.png
 categories:
