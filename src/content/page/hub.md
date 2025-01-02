@@ -20,7 +20,7 @@ The Hub user interface has multiple instances so it is important you choose the 
 - [Dev](https://synthetic.hub.devl.techbd.org/)
 - [Staging](https://synthetic.hub.stage.techbd.org/)
 - [QA](https://phi.hub.qa.techbd.org/)
-- [Prd](https://phi.hub.techbd.org/)
+- [Prd](https://hub.techbd.org/)
 
 ## $validate Endpoint
 
