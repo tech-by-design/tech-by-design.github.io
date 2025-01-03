@@ -34,6 +34,7 @@ Technology by Design believes in offering help publicly through a variety of res
                             <li><a href="https://synthetic.hub.devl.techbd.org/" target="_blank">Dev</a></li>
                             <li><a href="https://synthetic.hub.stage.techbd.org/" target="_blank">Staging</a></li>
                             <li><a href="https://phi.hub.qa.techbd.org/" target="_blank">QA</a>​</li>
+                            <li><a href="https://hub.techbd.org/" target="_blank">PRD</a>​</li>
                         </ul>
                     </p>
 				</div>
