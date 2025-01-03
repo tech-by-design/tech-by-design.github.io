@@ -1,0 +1,52 @@
+name: Regression Test Pipeline
+
+on:
+  workflow_dispatch:
+  
+permissions:
+  contents: write
+  
+jobs:
+  Regression-Test-Prime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js 20 LTS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install httpyac
+        run: npm install -g httpyac && node --version && httpyac --version
+
+      - name: Install Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: Install https://github.com/inorton/junit2html
+        run: pip install junit2html
+  
+      - name: Run regression tests and generate results files
+        run: npm run gen-regression-test-results
+          
+      - name: Set up environment variables
+        run: |
+          echo "DATETIME=$(date +'%Y-%m-%d-%H-%M-%S')" >> $GITHUB_ENV
+
+      - name: Commit and push result
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "test: introduce ${{ env.DATETIME }} regression test results"
+          git push
+
+      - name: Trigger Deploy to GitHub Pages workflow
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/dispatches \
+            -d '{"event_type": "execute-post-regression-test"}'

@@ -38,7 +38,7 @@ export const NavigationLinks = [
   { name: 'About', href: 'about' },
   { name: 'Get Help', href: 'get-help' },
   { name: 'Articles', href: 'blog' },
-  { name: 'Docs', href: 'doc/introduction' },
+  { name: 'Docs', href: 'docs' },
   { name: 'Status', href: 'https://status.techbd.org', target: "blank" }
 ]
 

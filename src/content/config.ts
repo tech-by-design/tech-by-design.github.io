@@ -1,6 +1,7 @@
 // 1. Import your utilities and schemas
 import { z, defineCollection, reference } from 'astro:content'
 import { rssSchema } from '@astrojs/rss'
+import { docsSchema } from '@astrojs/starlight/schema';
 
 // 2. Define your collections
 const blog = defineCollection({
@@ -85,5 +86,6 @@ export const collections = {
   doc,
   category,
   author,
-  social
+  social,
+  docs: defineCollection({ schema: docsSchema() }),
 }
