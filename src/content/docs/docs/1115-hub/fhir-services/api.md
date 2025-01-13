@@ -73,17 +73,10 @@ title: API Endpoints
   - Hub self-service UI endpoint
     - https://synthetic.hub.devl.techbd.org/
   
-- **Instructions for Using Swagger API Documentation For API Testing**:
-  -	[Instruction Video for Using Swagger API Documentation For API Testing](https://github.com/tech-by-design/docs.techbd.org/tree/main/src/content/docs/1115-hub/fhir-services/support/)
+
 
 - **FHIR Server Capabilities**: [`https://synthetic.fhir.api.techbd.org/metadata`](https://synthetic.fhir.api.techbd.org/metadata) (returns XML)
 - **Authentication**: None at this time, will be defined and deployed soon.
 - **Bundle Endpoints**:
   - **Validate Bundle**: `/Bundle/$validate`
   - **Submit Bundle to SHIN-NY Data Lake**: `/Bundle`
-
-Learn more about all of the endpoints by reviewing [TechBD's FHIR API Test Script](/docs.techbd.org/assurance/1115-waiver/ahc-hrsn/screening/regression-test-prime/fhir-service-prime/results/latest/src/fhir-service.test.http) and most recent [TechBD's FHIR API Test Script Results](/docs.techbd.org/1115-hub/fhir-services/regression-test-results/). 
-
-### Architecture
-
-![FHIR Server Architecture](/docs/1115-hub/fhir-services/qcs-fhir-service.drawio.svg)

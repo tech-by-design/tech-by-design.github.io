@@ -5,6 +5,7 @@ title: Regression Test Results
 **FHIR Server Base URL for Synthetic Data Exchange**: `https://synthetic.fhir.api.devl.techbd.org`. No authentication requried at this time, will be defined and deployed soon.
 
 ### Tech by Design FHIR API test scripts and results
+https://github.com/tech-by-design/tech-by-design.github.io/tree/main/public/assurance/1115-waiver/ahc-hrsn/screening/regression-test-prime/fhir-service-prime/results
 
 Learn about API endpoints by reviewing [Tech by Design's FHIR API Test Script](/assurance/1115-waiver/ahc-hrsn/screening/regression-test-prime/fhir-service-prime/results/latest/src/fhir-service.test.http). 
 - [Latest Test Fixtures](/assurance/1115-waiver/ahc-hrsn/screening/regression-test-prime/fhir-service-prime/src/2024-11-14) (generated test cases)
