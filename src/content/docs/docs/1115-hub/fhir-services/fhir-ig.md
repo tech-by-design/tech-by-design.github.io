@@ -5,7 +5,3 @@ sidebar:
 ---
 
 This project uses the [SHIN-NY SDoH FHIR Implementation Guide v1.2.0](https://shinny.org/ImplementationGuide/HRSN/index.html).
-
-### SHIN-NY SDoH IG Validation Engines Comparison 
-
-- [Latest Validation Comparison Results](https://github.com/tech-by-design/tech-by-design.github.io/tree/main/public/assurance/1115-waiver/ahc-hrsn/screening/regression-test-prime/fhir-service-prime/results/2024/05)
