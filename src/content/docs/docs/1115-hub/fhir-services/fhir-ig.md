@@ -4,4 +4,4 @@ sidebar:
   label: Implementation Guide (IG)
 ---
 
-This project uses the [SHIN-NY SDoH FHIR Implementation Guide v1.2.0](https://shinny.org/ImplementationGuide/HRSN/index.html).
+This project uses the [SHIN-NY SDoH FHIR Implementation Guide v1.2.2](https://shinny.org/us/ny/hrsn/index.html).

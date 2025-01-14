@@ -1,0 +1,875 @@
+{
+    "OperationOutcome": {
+      "validationResults": [
+        {
+          "operationOutcome": {
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 9459
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[1].resource/*Observation/SexualOrientationExample*/",
+                  "Line[1] Col[9459]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 9459
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have an effective[x] ()",
+                "location": [
+                  "Bundle.entry[1].resource/*Observation/SexualOrientationExample*/",
+                  "Line[1] Col[9459]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 13715
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Reference_REF_MultipleMatches"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Reference_REF_MultipleMatches"
+                    }
+                  ]
+                },
+                "diagnostics": "Found multiple matching profiles for Observation/FoodInsecurity88122-7 among choices: http://hl7.org/fhir/us/sdoh-clinicalcare/StructureDefinition/SDOHCC-ObservationAssessment, http://hl7.org/fhir/us/sdoh-clinicalcare/StructureDefinition/SDOHCC-ObservationScreeningResponse",
+                "location": [
+                  "Bundle.entry[2].resource/*ServiceRequest/ServiceRequestActiveExample*/.reasonReference[0]",
+                  "Line[1] Col[13715]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 13765
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Reference_REF_MultipleMatches"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Reference_REF_MultipleMatches"
+                    }
+                  ]
+                },
+                "diagnostics": "Found multiple matching profiles for Observation/FoodInsecurity88123-5 among choices: http://hl7.org/fhir/us/sdoh-clinicalcare/StructureDefinition/SDOHCC-ObservationAssessment, http://hl7.org/fhir/us/sdoh-clinicalcare/StructureDefinition/SDOHCC-ObservationScreeningResponse",
+                "location": [
+                  "Bundle.entry[2].resource/*ServiceRequest/ServiceRequestActiveExample*/.reasonReference[1]",
+                  "Line[1] Col[13765]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 17146
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[3].resource/*Observation/FoodInsecurity88122-7*/",
+                  "Line[1] Col[17146]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 20497
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[4].resource/*Observation/FoodInsecurity88123-5*/",
+                  "Line[1] Col[20497]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21977
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "diagnostics": "Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided",
+                "location": [
+                  "Bundle.entry[5].resource/*Organization/OrganizationExampleCBO*/.identifier[0].type",
+                  "Line[1] Col[21977]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 21977
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Terminology_TX_NoValid_2_CC"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Terminology_TX_NoValid_2_CC"
+                    }
+                  ]
+                },
+                "diagnostics": "None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#null)",
+                "location": [
+                  "Bundle.entry[5].resource/*Organization/OrganizationExampleCBO*/.identifier[0].type",
+                  "Line[1] Col[21977]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 26104
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "diagnostics": "Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided",
+                "location": [
+                  "Bundle.entry[7].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0].type",
+                  "Line[1] Col[26104]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 26104
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Terminology_TX_NoValid_2_CC"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Terminology_TX_NoValid_2_CC"
+                    }
+                  ]
+                },
+                "diagnostics": "None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#null)",
+                "location": [
+                  "Bundle.entry[7].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0].type",
+                  "Line[1] Col[26104]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 27886
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Terminology_TX_NoValid_2_CC"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Terminology_TX_NoValid_2_CC"
+                    }
+                  ]
+                },
+                "diagnostics": "None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NPI)",
+                "location": [
+                  "Bundle.entry[8].resource/*Practitioner/PractitionerExampleSCN*/.identifier[0].type",
+                  "Line[1] Col[27886]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 38241
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Questionnaire_QR_Q_NotFound"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Questionnaire_QR_Q_NotFound"
+                    }
+                  ]
+                },
+                "diagnostics": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYReferralApprovalQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+                "location": [
+                  "Bundle.entry[9].resource/*QuestionnaireResponse/SHINNYReferralApprovalQuestionnaireResponse*/",
+                  "Line[1] Col[38241]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 48826
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Questionnaire_QR_Q_NotFound"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Questionnaire_QR_Q_NotFound"
+                    }
+                  ]
+                },
+                "diagnostics": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYHRSNOutreachQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+                "location": [
+                  "Bundle.entry[10].resource/*QuestionnaireResponse/SHINNYHRSNOutreachQuestionnaireResponse*/",
+                  "Line[1] Col[48826]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 59426
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Questionnaire_QR_Q_NotFound"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Questionnaire_QR_Q_NotFound"
+                    }
+                  ]
+                },
+                "diagnostics": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYSCNOutreachQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+                "location": [
+                  "Bundle.entry[11].resource/*QuestionnaireResponse/SHINNYSCNOutreachQuestionnaireResponse*/",
+                  "Line[1] Col[59426]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 62029
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "diagnostics": "Constraint failed: SHINNY-Obs-Encounter: 'SDOH Observations should have an Encounter' (defined in http://shinny.org/us/ny/hrsn/StructureDefinition/SHINNYBundleProfile)",
+                "location": [
+                  "Bundle",
+                  "Line[1] Col[62029]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 9459
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[1].resource",
+                  "Line[1] Col[9459]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 9459
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have an effective[x] ()",
+                "location": [
+                  "Bundle.entry[1].resource",
+                  "Line[1] Col[9459]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 17146
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[3].resource",
+                  "Line[1] Col[17146]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 20497
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[4].resource",
+                  "Line[1] Col[20497]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 38241
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Questionnaire_QR_Q_NotFound"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Questionnaire_QR_Q_NotFound"
+                    }
+                  ]
+                },
+                "diagnostics": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYReferralApprovalQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+                "location": [
+                  "Bundle.entry[9].resource",
+                  "Line[1] Col[38241]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 48826
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Questionnaire_QR_Q_NotFound"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Questionnaire_QR_Q_NotFound"
+                    }
+                  ]
+                },
+                "diagnostics": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYHRSNOutreachQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+                "location": [
+                  "Bundle.entry[10].resource",
+                  "Line[1] Col[48826]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 59426
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Questionnaire_QR_Q_NotFound"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Questionnaire_QR_Q_NotFound"
+                    }
+                  ]
+                },
+                "diagnostics": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYSCNOutreachQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+                "location": [
+                  "Bundle.entry[11].resource",
+                  "Line[1] Col[59426]"
+                ]
+              }
+            ]
+          },
+          "initiatedAt": 1733810963.069334,
+          "observability": {
+            "identity": "org.techbd.orchestrate.fhir.OrchestrationEngine$HapiValidationEngine",
+            "name": "HAPI version 7.4.0 (FHIR version 4.0.1)",
+            "initAt": 1733808555.4756672,
+            "constructedAt": 1733808555.490435
+          },
+          "issues": [
+            {
+              "location": {
+                "line": 1,
+                "column": 9459,
+                "diagnostics": "Bundle.entry[1].resource/*Observation/SexualOrientationExample*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 9459,
+                "diagnostics": "Bundle.entry[1].resource/*Observation/SexualOrientationExample*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have an effective[x] ()",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 13715,
+                "diagnostics": "Bundle.entry[2].resource/*ServiceRequest/ServiceRequestActiveExample*/.reasonReference[0]"
+              },
+              "message": "Found multiple matching profiles for Observation/FoodInsecurity88122-7 among choices: http://hl7.org/fhir/us/sdoh-clinicalcare/StructureDefinition/SDOHCC-ObservationAssessment, http://hl7.org/fhir/us/sdoh-clinicalcare/StructureDefinition/SDOHCC-ObservationScreeningResponse",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 13765,
+                "diagnostics": "Bundle.entry[2].resource/*ServiceRequest/ServiceRequestActiveExample*/.reasonReference[1]"
+              },
+              "message": "Found multiple matching profiles for Observation/FoodInsecurity88123-5 among choices: http://hl7.org/fhir/us/sdoh-clinicalcare/StructureDefinition/SDOHCC-ObservationAssessment, http://hl7.org/fhir/us/sdoh-clinicalcare/StructureDefinition/SDOHCC-ObservationScreeningResponse",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 17146,
+                "diagnostics": "Bundle.entry[3].resource/*Observation/FoodInsecurity88122-7*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 20497,
+                "diagnostics": "Bundle.entry[4].resource/*Observation/FoodInsecurity88123-5*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 21977,
+                "diagnostics": "Bundle.entry[5].resource/*Organization/OrganizationExampleCBO*/.identifier[0].type"
+              },
+              "message": "Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 21977,
+                "diagnostics": "Bundle.entry[5].resource/*Organization/OrganizationExampleCBO*/.identifier[0].type"
+              },
+              "message": "None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#null)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 26104,
+                "diagnostics": "Bundle.entry[7].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0].type"
+              },
+              "message": "Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 26104,
+                "diagnostics": "Bundle.entry[7].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0].type"
+              },
+              "message": "None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#null)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 27886,
+                "diagnostics": "Bundle.entry[8].resource/*Practitioner/PractitionerExampleSCN*/.identifier[0].type"
+              },
+              "message": "None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NPI)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 38241,
+                "diagnostics": "Bundle.entry[9].resource/*QuestionnaireResponse/SHINNYReferralApprovalQuestionnaireResponse*/"
+              },
+              "message": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYReferralApprovalQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 48826,
+                "diagnostics": "Bundle.entry[10].resource/*QuestionnaireResponse/SHINNYHRSNOutreachQuestionnaireResponse*/"
+              },
+              "message": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYHRSNOutreachQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 59426,
+                "diagnostics": "Bundle.entry[11].resource/*QuestionnaireResponse/SHINNYSCNOutreachQuestionnaireResponse*/"
+              },
+              "message": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYSCNOutreachQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 62029,
+                "diagnostics": "Bundle"
+              },
+              "message": "Constraint failed: SHINNY-Obs-Encounter: 'SDOH Observations should have an Encounter' (defined in http://shinny.org/us/ny/hrsn/StructureDefinition/SHINNYBundleProfile)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 9459,
+                "diagnostics": "Bundle.entry[1].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 9459,
+                "diagnostics": "Bundle.entry[1].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have an effective[x] ()",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 17146,
+                "diagnostics": "Bundle.entry[3].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 20497,
+                "diagnostics": "Bundle.entry[4].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 38241,
+                "diagnostics": "Bundle.entry[9].resource"
+              },
+              "message": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYReferralApprovalQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 48826,
+                "diagnostics": "Bundle.entry[10].resource"
+              },
+              "message": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYHRSNOutreachQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 59426,
+                "diagnostics": "Bundle.entry[11].resource"
+              },
+              "message": "The questionnaire 'http://shinny.org/us/ny/hrsn/Questionnaire/SHINNYSCNOutreachQuestionnaire' could not be resolved, so no validation can be performed against the base questionnaire",
+              "severity": "WARNING"
+            }
+          ],
+          "completedAt": 1733810964.7350307,
+          "profileUrl": "https://shinny.org/us/ny/hrsn/StructureDefinition-SHINNYBundleProfile.json",
+          "igVersion": "1.2.0",
+          "valid": true
+        }
+      ],
+      "device": {
+        "deviceId": "127.0.1.1",
+        "deviceName": "vinod-OptiPlex"
+      },
+      "resourceType": "OperationOutcome"
+    }
+  }

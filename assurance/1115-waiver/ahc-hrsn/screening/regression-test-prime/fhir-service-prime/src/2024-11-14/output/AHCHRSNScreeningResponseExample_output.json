@@ -1,0 +1,4081 @@
+{
+    "OperationOutcome": {
+      "validationResults": [
+        {
+          "operationOutcome": {
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 9438
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[1].resource/*Observation/SexualOrientationExample*/",
+                  "Line[1] Col[9438]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 9438
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have an effective[x] ()",
+                "location": [
+                  "Bundle.entry[1].resource/*Observation/SexualOrientationExample*/",
+                  "Line[1] Col[9438]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 10928
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "diagnostics": "Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided",
+                "location": [
+                  "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0].type",
+                  "Line[1] Col[10928]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 10928
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Terminology_TX_NoValid_2_CC"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Terminology_TX_NoValid_2_CC"
+                    }
+                  ]
+                },
+                "diagnostics": "None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#null)",
+                "location": [
+                  "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0].type",
+                  "Line[1] Col[10928]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 10986
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shin-ny-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]: Does not match slice 'NPI' (discriminator: $this.where(system = 'http://hl7.org/fhir/sid/us-npi').exists())",
+                "location": [
+                  "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]",
+                  "Line[1] Col[10986]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 10986
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shin-ny-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]: Does not match slice 'CLIA' (discriminator: $this.empty())",
+                "location": [
+                  "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]",
+                  "Line[1] Col[10986]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 10986
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shin-ny-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]: Does not match slice 'CMS' (discriminator: $this.where(system = 'http://www.medicaid.gov/').exists())",
+                "location": [
+                  "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]",
+                  "Line[1] Col[10986]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 10986
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shin-ny-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]: Does not match slice 'SCN' (discriminator: $this.where(system = 'http://www.scn.ny.gov/').exists())",
+                "location": [
+                  "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]",
+                  "Line[1] Col[10986]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 10986
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shin-ny-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]: Does not match slice 'CBO' (discriminator: $this.where(system = 'http://www.cbo.ny.gov/').exists())",
+                "location": [
+                  "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]",
+                  "Line[1] Col[10986]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 10986
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shin-ny-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]: Does not match slice 'OID' (discriminator: $this.where(system = 'http://www.hl7.org/oid/').exists())",
+                "location": [
+                  "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]",
+                  "Line[1] Col[10986]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 10986
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shin-ny-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]: Does not match slice 'TIN' (discriminator: $this.where(system = 'http://www.irs.gov/').exists())",
+                "location": [
+                  "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]",
+                  "Line[1] Col[10986]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 13626
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "diagnostics": "Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided",
+                "location": [
+                  "Bundle.entry[3].resource/*Consent/ConsentExample*/.scope",
+                  "Line[1] Col[13626]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 13626
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Terminology_TX_NoValid_2_CC"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Terminology_TX_NoValid_2_CC"
+                    }
+                  ]
+                },
+                "diagnostics": "None of the codings provided are in the value set 'Consent Scope Codes' (http://hl7.org/fhir/ValueSet/consent-scope|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#treatment)",
+                "location": [
+                  "Bundle.entry[3].resource/*Consent/ConsentExample*/.scope",
+                  "Line[1] Col[13626]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 13726
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-Consent|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[3].resource/*Consent/ConsentExample*/.category[0]: Does not match slice 'IDSCL' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/v3-ActCode') and (code = 'IDSCL')).exists())",
+                "location": [
+                  "Bundle.entry[3].resource/*Consent/ConsentExample*/.category[0]",
+                  "Line[1] Col[13726]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 16049
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "diagnostics": "Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided",
+                "location": [
+                  "Bundle.entry[4].resource/*Encounter/EncounterExample*/.type[0]",
+                  "Line[1] Col[16049]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 16049
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Terminology_TX_NoValid_2_CC"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Terminology_TX_NoValid_2_CC"
+                    }
+                  ]
+                },
+                "diagnostics": "None of the codings provided are in the value set 'US Core Encounter Type' (http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type|3.1.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#405672008)",
+                "location": [
+                  "Bundle.entry[4].resource/*Encounter/EncounterExample*/.type[0]",
+                  "Line[1] Col[16049]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 16049
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Terminology_TX_NoValid_2_CC"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Terminology_TX_NoValid_2_CC"
+                    }
+                  ]
+                },
+                "diagnostics": "None of the codings provided are in the value set 'SHINNYEncounterTypeVS' (http://shinny.org/us/ny/hrsn/ValueSet/SHINNYEncounterTypeVS|1.1.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#405672008)",
+                "location": [
+                  "Bundle.entry[4].resource/*Encounter/EncounterExample*/.type[0]",
+                  "Line[1] Col[16049]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 20990
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[6].resource/*Observation/HousingInstability71802-3*/",
+                  "Line[1] Col[20990]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 24237
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[7].resource/*Observation/InadequateHousing96778-6*/",
+                  "Line[1] Col[24237]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 27588
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[8].resource/*Observation/FoodInsecurity88122-7*/",
+                  "Line[1] Col[27588]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 30917
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[9].resource/*Observation/FoodInsecurity88123-5*/",
+                  "Line[1] Col[30917]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 34174
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[10].resource/*Observation/TransportationInsecurity93030-5*/",
+                  "Line[1] Col[34174]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 37256
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[11].resource/*Observation/UtilityInsecurity96779-4*/",
+                  "Line[1] Col[37256]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 40249
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[12].resource/*Observation/InterpersonalSafety95618-5*/",
+                  "Line[1] Col[40249]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 43269
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[13].resource/*Observation/InterpersonalSafety95617-7*/",
+                  "Line[1] Col[43269]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 46282
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[14].resource/*Observation/InterpersonalSafety95616-9*/",
+                  "Line[1] Col[46282]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 49286
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[15].resource/*Observation/InterpersonalSafety95615-1*/",
+                  "Line[1] Col[49286]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 52863
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[16].resource/*Observation/InterpersonalSafety95614-4*/",
+                  "Line[1] Col[52863]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 59408
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[17].resource/*Observation/AHCScreeningGroup96777-8*/",
+                  "Line[1] Col[59408]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 62775
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[18].resource/*Observation/FinancialInsecurity76513-1*/",
+                  "Line[1] Col[62775]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 65985
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[19].resource/*Observation/EmploymentStatus96780-2*/",
+                  "Line[1] Col[65985]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 69125
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[20].resource/*Observation/SocialConnection96781-0*/",
+                  "Line[1] Col[69125]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 72076
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[21].resource/*Observation/SocialHistory93159-2*/",
+                  "Line[1] Col[72076]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 74826
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[22].resource/*Observation/LanguageFinding97027-7*/",
+                  "Line[1] Col[74826]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 74199
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[22].resource/*Observation/LanguageFinding97027-7*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[22].resource/*Observation/LanguageFinding97027-7*/.category[0]",
+                  "Line[1] Col[74199]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 74199
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[22].resource/*Observation/LanguageFinding97027-7*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[22].resource/*Observation/LanguageFinding97027-7*/.category[0]",
+                  "Line[1] Col[74199]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 74199
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[22].resource/*Observation/LanguageFinding97027-7*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[22].resource/*Observation/LanguageFinding97027-7*/.category[0]",
+                  "Line[1] Col[74199]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 78012
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[23].resource/*Observation/Education96782-8*/",
+                  "Line[1] Col[78012]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 77157
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[23].resource/*Observation/Education96782-8*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[23].resource/*Observation/Education96782-8*/.category[0]",
+                  "Line[1] Col[77157]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 77157
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[23].resource/*Observation/Education96782-8*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[23].resource/*Observation/Education96782-8*/.category[0]",
+                  "Line[1] Col[77157]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 77157
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[23].resource/*Observation/Education96782-8*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[23].resource/*Observation/Education96782-8*/.category[0]",
+                  "Line[1] Col[77157]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 81197
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[24].resource/*Observation/PhysicalActivity89555-7*/",
+                  "Line[1] Col[81197]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 80335
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[24].resource/*Observation/PhysicalActivity89555-7*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[24].resource/*Observation/PhysicalActivity89555-7*/.category[0]",
+                  "Line[1] Col[80335]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 80335
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[24].resource/*Observation/PhysicalActivity89555-7*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[24].resource/*Observation/PhysicalActivity89555-7*/.category[0]",
+                  "Line[1] Col[80335]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 80335
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[24].resource/*Observation/PhysicalActivity89555-7*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[24].resource/*Observation/PhysicalActivity89555-7*/.category[0]",
+                  "Line[1] Col[80335]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 84137
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[25].resource/*Observation/PhysicalActivity68516-4*/",
+                  "Line[1] Col[84137]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 83396
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[25].resource/*Observation/PhysicalActivity68516-4*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[25].resource/*Observation/PhysicalActivity68516-4*/.category[0]",
+                  "Line[1] Col[83396]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 83396
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[25].resource/*Observation/PhysicalActivity68516-4*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[25].resource/*Observation/PhysicalActivity68516-4*/.category[0]",
+                  "Line[1] Col[83396]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 83396
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[25].resource/*Observation/PhysicalActivity68516-4*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[25].resource/*Observation/PhysicalActivity68516-4*/.category[0]",
+                  "Line[1] Col[83396]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 87341
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[26].resource/*Observation/PhysicalActivityWeekly*/",
+                  "Line[1] Col[87341]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 86629
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[26].resource/*Observation/PhysicalActivityWeekly*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[26].resource/*Observation/PhysicalActivityWeekly*/.category[0]",
+                  "Line[1] Col[86629]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 86629
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[26].resource/*Observation/PhysicalActivityWeekly*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[26].resource/*Observation/PhysicalActivityWeekly*/.category[0]",
+                  "Line[1] Col[86629]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 86629
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[26].resource/*Observation/PhysicalActivityWeekly*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[26].resource/*Observation/PhysicalActivityWeekly*/.category[0]",
+                  "Line[1] Col[86629]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 90313
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[27].resource/*Observation/AlcoholUse68517-2*/",
+                  "Line[1] Col[90313]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 89574
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[27].resource/*Observation/AlcoholUse68517-2*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[27].resource/*Observation/AlcoholUse68517-2*/.category[0]",
+                  "Line[1] Col[89574]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 89574
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[27].resource/*Observation/AlcoholUse68517-2*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[27].resource/*Observation/AlcoholUse68517-2*/.category[0]",
+                  "Line[1] Col[89574]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 89574
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[27].resource/*Observation/AlcoholUse68517-2*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[27].resource/*Observation/AlcoholUse68517-2*/.category[0]",
+                  "Line[1] Col[89574]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 93128
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[28].resource/*Observation/TobaccoUse96842-0*/",
+                  "Line[1] Col[93128]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 92460
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[28].resource/*Observation/TobaccoUse96842-0*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[28].resource/*Observation/TobaccoUse96842-0*/.category[0]",
+                  "Line[1] Col[92460]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 92460
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[28].resource/*Observation/TobaccoUse96842-0*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[28].resource/*Observation/TobaccoUse96842-0*/.category[0]",
+                  "Line[1] Col[92460]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 92460
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[28].resource/*Observation/TobaccoUse96842-0*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[28].resource/*Observation/TobaccoUse96842-0*/.category[0]",
+                  "Line[1] Col[92460]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 96006
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[29].resource/*Observation/SubstanceUse95530-2*/",
+                  "Line[1] Col[96006]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 95310
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[29].resource/*Observation/SubstanceUse95530-2*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[29].resource/*Observation/SubstanceUse95530-2*/.category[0]",
+                  "Line[1] Col[95310]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 95310
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[29].resource/*Observation/SubstanceUse95530-2*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[29].resource/*Observation/SubstanceUse95530-2*/.category[0]",
+                  "Line[1] Col[95310]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 95310
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[29].resource/*Observation/SubstanceUse95530-2*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[29].resource/*Observation/SubstanceUse95530-2*/.category[0]",
+                  "Line[1] Col[95310]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 98866
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[30].resource/*Observation/DrugUse68524-8*/",
+                  "Line[1] Col[98866]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 98142
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[30].resource/*Observation/DrugUse68524-8*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[30].resource/*Observation/DrugUse68524-8*/.category[0]",
+                  "Line[1] Col[98142]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 98142
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[30].resource/*Observation/DrugUse68524-8*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[30].resource/*Observation/DrugUse68524-8*/.category[0]",
+                  "Line[1] Col[98142]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 98142
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[30].resource/*Observation/DrugUse68524-8*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[30].resource/*Observation/DrugUse68524-8*/.category[0]",
+                  "Line[1] Col[98142]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 101607
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[31].resource/*Observation/MentalState44250-9*/",
+                  "Line[1] Col[101607]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 100963
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[31].resource/*Observation/MentalState44250-9*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[31].resource/*Observation/MentalState44250-9*/.category[0]",
+                  "Line[1] Col[100963]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 100963
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[31].resource/*Observation/MentalState44250-9*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[31].resource/*Observation/MentalState44250-9*/.category[0]",
+                  "Line[1] Col[100963]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 100963
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[31].resource/*Observation/MentalState44250-9*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[31].resource/*Observation/MentalState44250-9*/.category[0]",
+                  "Line[1] Col[100963]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 104331
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[32].resource/*Observation/MentalState44255-8*/",
+                  "Line[1] Col[104331]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 103701
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[32].resource/*Observation/MentalState44255-8*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[32].resource/*Observation/MentalState44255-8*/.category[0]",
+                  "Line[1] Col[103701]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 103701
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[32].resource/*Observation/MentalState44255-8*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[32].resource/*Observation/MentalState44255-8*/.category[0]",
+                  "Line[1] Col[103701]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 103701
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[32].resource/*Observation/MentalState44255-8*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[32].resource/*Observation/MentalState44255-8*/.category[0]",
+                  "Line[1] Col[103701]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 107372
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[33].resource/*Observation/MentalStateScore*/",
+                  "Line[1] Col[107372]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 106681
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[33].resource/*Observation/MentalStateScore*/.category[0]: Does not match slice 'SocialHistory' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'social-history')).exists())",
+                "location": [
+                  "Bundle.entry[33].resource/*Observation/MentalStateScore*/.category[0]",
+                  "Line[1] Col[106681]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 106681
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[33].resource/*Observation/MentalStateScore*/.category[0]: Does not match slice 'Survey' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/observation-category') and (code = 'survey')).exists())",
+                "location": [
+                  "Bundle.entry[33].resource/*Observation/MentalStateScore*/.category[0]",
+                  "Line[1] Col[106681]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 106681
+                  }
+                ],
+                "severity": "information",
+                "code": "processing",
+                "diagnostics": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Bundle.entry[33].resource/*Observation/MentalStateScore*/.category[0]: Does not match slice 'SDOH' (discriminator: ($this memberOf 'http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetSDOHCategory'))",
+                "location": [
+                  "Bundle.entry[33].resource/*Observation/MentalStateScore*/.category[0]",
+                  "Line[1] Col[106681]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 110437
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[34].resource/*Observation/Stress93038-8*/",
+                  "Line[1] Col[110437]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 113784
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[35].resource/*Observation/Disability69858-9*/",
+                  "Line[1] Col[113784]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 113783
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "Terminology_TX_NoValid_2_CC"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "Terminology_TX_NoValid_2_CC"
+                    }
+                  ]
+                },
+                "diagnostics": "None of the codings provided are in the value set 'DataAbsentReason' (http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = https://terminology.hl7.org/6.0.2/CodeSystem-data-absent-reason#asked-declined)",
+                "location": [
+                  "Bundle.entry[35].resource/*Observation/Disability69858-9*/.dataAbsentReason",
+                  "Line[1] Col[113783]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 116948
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[36].resource/*Observation/Disability69861-3*/",
+                  "Line[1] Col[116948]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 124020
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[37].resource/*Observation/SupplementalGroup97023-6*/",
+                  "Line[1] Col[124020]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 124121
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "diagnostics": "Constraint failed: SHINNY-Encounter-Type: 'Ensure that the Encounter resource has a status code' (defined in http://shinny.org/us/ny/hrsn/StructureDefinition/SHINNYBundleProfile)",
+                "location": [
+                  "Bundle",
+                  "Line[1] Col[124121]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 124121
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "diagnostics": "Constraint failed: SHINNY-Obs-Encounter: 'SDOH Observations should have an Encounter' (defined in http://shinny.org/us/ny/hrsn/StructureDefinition/SHINNYBundleProfile)",
+                "location": [
+                  "Bundle",
+                  "Line[1] Col[124121]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 124121
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "diagnostics": "Constraint failed: ObservationScreenRes-Interpretation: 'Ensure that specific Observation Screening Responses have an interpretation.' (defined in http://shinny.org/us/ny/hrsn/StructureDefinition/SHINNYBundleProfile)",
+                "location": [
+                  "Bundle",
+                  "Line[1] Col[124121]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 9438
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[1].resource",
+                  "Line[1] Col[9438]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 9438
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have an effective[x] ()",
+                "location": [
+                  "Bundle.entry[1].resource",
+                  "Line[1] Col[9438]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 20990
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[6].resource",
+                  "Line[1] Col[20990]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 24237
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[7].resource",
+                  "Line[1] Col[24237]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 27588
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[8].resource",
+                  "Line[1] Col[27588]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 30917
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[9].resource",
+                  "Line[1] Col[30917]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 34174
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[10].resource",
+                  "Line[1] Col[34174]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 37256
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[11].resource",
+                  "Line[1] Col[37256]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 40249
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[12].resource",
+                  "Line[1] Col[40249]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 43269
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[13].resource",
+                  "Line[1] Col[43269]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 46282
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[14].resource",
+                  "Line[1] Col[46282]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 49286
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[15].resource",
+                  "Line[1] Col[49286]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 52863
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[16].resource",
+                  "Line[1] Col[52863]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 59408
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[17].resource",
+                  "Line[1] Col[59408]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 62775
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[18].resource",
+                  "Line[1] Col[62775]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 65985
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[19].resource",
+                  "Line[1] Col[65985]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 69125
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[20].resource",
+                  "Line[1] Col[69125]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 72076
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[21].resource",
+                  "Line[1] Col[72076]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 74826
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[22].resource",
+                  "Line[1] Col[74826]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 78012
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[23].resource",
+                  "Line[1] Col[78012]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 81197
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[24].resource",
+                  "Line[1] Col[81197]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 84137
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[25].resource",
+                  "Line[1] Col[84137]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 87341
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[26].resource",
+                  "Line[1] Col[87341]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 90313
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[27].resource",
+                  "Line[1] Col[90313]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 93128
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[28].resource",
+                  "Line[1] Col[93128]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 96006
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[29].resource",
+                  "Line[1] Col[96006]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 98866
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[30].resource",
+                  "Line[1] Col[98866]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 101607
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[31].resource",
+                  "Line[1] Col[101607]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 104331
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[32].resource",
+                  "Line[1] Col[104331]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 107372
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[33].resource",
+                  "Line[1] Col[107372]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 110437
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[34].resource",
+                  "Line[1] Col[110437]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 113784
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[35].resource",
+                  "Line[1] Col[113784]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 116948
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[36].resource",
+                  "Line[1] Col[116948]"
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+                    "valueInteger": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+                    "valueInteger": 124020
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+                    "valueString": "All_observations_should_have_a_performer"
+                  }
+                ],
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/java-core-messageId",
+                      "code": "All_observations_should_have_a_performer"
+                    }
+                  ]
+                },
+                "diagnostics": "Best Practice Recommendation: In general, all observations should have a performer",
+                "location": [
+                  "Bundle.entry[37].resource",
+                  "Line[1] Col[124020]"
+                ]
+              }
+            ]
+          },
+          "initiatedAt": 1731564948.0290048,
+          "observability": {
+            "identity": "org.techbd.orchestrate.fhir.OrchestrationEngine$HapiValidationEngine",
+            "name": "HAPI version 7.4.0 (FHIR version 4.0.1)",
+            "initAt": 1731563546.4643347,
+            "constructedAt": 1731563546.4646063
+          },
+          "issues": [
+            {
+              "location": {
+                "line": 1,
+                "column": 9438,
+                "diagnostics": "Bundle.entry[1].resource/*Observation/SexualOrientationExample*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 9438,
+                "diagnostics": "Bundle.entry[1].resource/*Observation/SexualOrientationExample*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have an effective[x] ()",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 10928,
+                "diagnostics": "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0].type"
+              },
+              "message": "Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 10928,
+                "diagnostics": "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0].type"
+              },
+              "message": "None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#null)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 10986,
+                "diagnostics": "Bundle.entry[2].resource/*Organization/OrganizationExampleOther-SCN1*/.identifier[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shin-ny-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 13626,
+                "diagnostics": "Bundle.entry[3].resource/*Consent/ConsentExample*/.scope"
+              },
+              "message": "Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 13626,
+                "diagnostics": "Bundle.entry[3].resource/*Consent/ConsentExample*/.scope"
+              },
+              "message": "None of the codings provided are in the value set 'Consent Scope Codes' (http://hl7.org/fhir/ValueSet/consent-scope|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#treatment)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 13726,
+                "diagnostics": "Bundle.entry[3].resource/*Consent/ConsentExample*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-Consent|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 16049,
+                "diagnostics": "Bundle.entry[4].resource/*Encounter/EncounterExample*/.type[0]"
+              },
+              "message": "Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 16049,
+                "diagnostics": "Bundle.entry[4].resource/*Encounter/EncounterExample*/.type[0]"
+              },
+              "message": "None of the codings provided are in the value set 'US Core Encounter Type' (http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type|3.1.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#405672008)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 16049,
+                "diagnostics": "Bundle.entry[4].resource/*Encounter/EncounterExample*/.type[0]"
+              },
+              "message": "None of the codings provided are in the value set 'SHINNYEncounterTypeVS' (http://shinny.org/us/ny/hrsn/ValueSet/SHINNYEncounterTypeVS|1.1.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#405672008)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 20990,
+                "diagnostics": "Bundle.entry[6].resource/*Observation/HousingInstability71802-3*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 24237,
+                "diagnostics": "Bundle.entry[7].resource/*Observation/InadequateHousing96778-6*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 27588,
+                "diagnostics": "Bundle.entry[8].resource/*Observation/FoodInsecurity88122-7*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 30917,
+                "diagnostics": "Bundle.entry[9].resource/*Observation/FoodInsecurity88123-5*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 34174,
+                "diagnostics": "Bundle.entry[10].resource/*Observation/TransportationInsecurity93030-5*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 37256,
+                "diagnostics": "Bundle.entry[11].resource/*Observation/UtilityInsecurity96779-4*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 40249,
+                "diagnostics": "Bundle.entry[12].resource/*Observation/InterpersonalSafety95618-5*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 43269,
+                "diagnostics": "Bundle.entry[13].resource/*Observation/InterpersonalSafety95617-7*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 46282,
+                "diagnostics": "Bundle.entry[14].resource/*Observation/InterpersonalSafety95616-9*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 49286,
+                "diagnostics": "Bundle.entry[15].resource/*Observation/InterpersonalSafety95615-1*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 52863,
+                "diagnostics": "Bundle.entry[16].resource/*Observation/InterpersonalSafety95614-4*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 59408,
+                "diagnostics": "Bundle.entry[17].resource/*Observation/AHCScreeningGroup96777-8*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 62775,
+                "diagnostics": "Bundle.entry[18].resource/*Observation/FinancialInsecurity76513-1*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 65985,
+                "diagnostics": "Bundle.entry[19].resource/*Observation/EmploymentStatus96780-2*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 69125,
+                "diagnostics": "Bundle.entry[20].resource/*Observation/SocialConnection96781-0*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 72076,
+                "diagnostics": "Bundle.entry[21].resource/*Observation/SocialHistory93159-2*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 74826,
+                "diagnostics": "Bundle.entry[22].resource/*Observation/LanguageFinding97027-7*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 74199,
+                "diagnostics": "Bundle.entry[22].resource/*Observation/LanguageFinding97027-7*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 78012,
+                "diagnostics": "Bundle.entry[23].resource/*Observation/Education96782-8*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 77157,
+                "diagnostics": "Bundle.entry[23].resource/*Observation/Education96782-8*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 81197,
+                "diagnostics": "Bundle.entry[24].resource/*Observation/PhysicalActivity89555-7*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 80335,
+                "diagnostics": "Bundle.entry[24].resource/*Observation/PhysicalActivity89555-7*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 84137,
+                "diagnostics": "Bundle.entry[25].resource/*Observation/PhysicalActivity68516-4*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 83396,
+                "diagnostics": "Bundle.entry[25].resource/*Observation/PhysicalActivity68516-4*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 87341,
+                "diagnostics": "Bundle.entry[26].resource/*Observation/PhysicalActivityWeekly*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 86629,
+                "diagnostics": "Bundle.entry[26].resource/*Observation/PhysicalActivityWeekly*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 90313,
+                "diagnostics": "Bundle.entry[27].resource/*Observation/AlcoholUse68517-2*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 89574,
+                "diagnostics": "Bundle.entry[27].resource/*Observation/AlcoholUse68517-2*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 93128,
+                "diagnostics": "Bundle.entry[28].resource/*Observation/TobaccoUse96842-0*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 92460,
+                "diagnostics": "Bundle.entry[28].resource/*Observation/TobaccoUse96842-0*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 96006,
+                "diagnostics": "Bundle.entry[29].resource/*Observation/SubstanceUse95530-2*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 95310,
+                "diagnostics": "Bundle.entry[29].resource/*Observation/SubstanceUse95530-2*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 98866,
+                "diagnostics": "Bundle.entry[30].resource/*Observation/DrugUse68524-8*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 98142,
+                "diagnostics": "Bundle.entry[30].resource/*Observation/DrugUse68524-8*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 101607,
+                "diagnostics": "Bundle.entry[31].resource/*Observation/MentalState44250-9*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 100963,
+                "diagnostics": "Bundle.entry[31].resource/*Observation/MentalState44250-9*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 104331,
+                "diagnostics": "Bundle.entry[32].resource/*Observation/MentalState44255-8*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 103701,
+                "diagnostics": "Bundle.entry[32].resource/*Observation/MentalState44255-8*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 107372,
+                "diagnostics": "Bundle.entry[33].resource/*Observation/MentalStateScore*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 106681,
+                "diagnostics": "Bundle.entry[33].resource/*Observation/MentalStateScore*/.category[0]"
+              },
+              "message": "This element does not match any known slice defined in the profile http://shinny.org/us/ny/hrsn/StructureDefinition/shinny-observation-screening-response|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+              "severity": "INFORMATION"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 110437,
+                "diagnostics": "Bundle.entry[34].resource/*Observation/Stress93038-8*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 113784,
+                "diagnostics": "Bundle.entry[35].resource/*Observation/Disability69858-9*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 113783,
+                "diagnostics": "Bundle.entry[35].resource/*Observation/Disability69858-9*/.dataAbsentReason"
+              },
+              "message": "None of the codings provided are in the value set 'DataAbsentReason' (http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = https://terminology.hl7.org/6.0.2/CodeSystem-data-absent-reason#asked-declined)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 116948,
+                "diagnostics": "Bundle.entry[36].resource/*Observation/Disability69861-3*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 124020,
+                "diagnostics": "Bundle.entry[37].resource/*Observation/SupplementalGroup97023-6*/"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 124121,
+                "diagnostics": "Bundle"
+              },
+              "message": "Constraint failed: SHINNY-Encounter-Type: 'Ensure that the Encounter resource has a status code' (defined in http://shinny.org/us/ny/hrsn/StructureDefinition/SHINNYBundleProfile)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 124121,
+                "diagnostics": "Bundle"
+              },
+              "message": "Constraint failed: SHINNY-Obs-Encounter: 'SDOH Observations should have an Encounter' (defined in http://shinny.org/us/ny/hrsn/StructureDefinition/SHINNYBundleProfile)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 124121,
+                "diagnostics": "Bundle"
+              },
+              "message": "Constraint failed: ObservationScreenRes-Interpretation: 'Ensure that specific Observation Screening Responses have an interpretation.' (defined in http://shinny.org/us/ny/hrsn/StructureDefinition/SHINNYBundleProfile)",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 9438,
+                "diagnostics": "Bundle.entry[1].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 9438,
+                "diagnostics": "Bundle.entry[1].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have an effective[x] ()",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 20990,
+                "diagnostics": "Bundle.entry[6].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 24237,
+                "diagnostics": "Bundle.entry[7].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 27588,
+                "diagnostics": "Bundle.entry[8].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 30917,
+                "diagnostics": "Bundle.entry[9].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 34174,
+                "diagnostics": "Bundle.entry[10].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 37256,
+                "diagnostics": "Bundle.entry[11].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 40249,
+                "diagnostics": "Bundle.entry[12].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 43269,
+                "diagnostics": "Bundle.entry[13].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 46282,
+                "diagnostics": "Bundle.entry[14].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 49286,
+                "diagnostics": "Bundle.entry[15].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 52863,
+                "diagnostics": "Bundle.entry[16].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 59408,
+                "diagnostics": "Bundle.entry[17].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 62775,
+                "diagnostics": "Bundle.entry[18].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 65985,
+                "diagnostics": "Bundle.entry[19].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 69125,
+                "diagnostics": "Bundle.entry[20].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 72076,
+                "diagnostics": "Bundle.entry[21].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 74826,
+                "diagnostics": "Bundle.entry[22].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 78012,
+                "diagnostics": "Bundle.entry[23].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 81197,
+                "diagnostics": "Bundle.entry[24].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 84137,
+                "diagnostics": "Bundle.entry[25].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 87341,
+                "diagnostics": "Bundle.entry[26].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 90313,
+                "diagnostics": "Bundle.entry[27].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 93128,
+                "diagnostics": "Bundle.entry[28].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 96006,
+                "diagnostics": "Bundle.entry[29].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 98866,
+                "diagnostics": "Bundle.entry[30].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 101607,
+                "diagnostics": "Bundle.entry[31].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 104331,
+                "diagnostics": "Bundle.entry[32].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 107372,
+                "diagnostics": "Bundle.entry[33].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 110437,
+                "diagnostics": "Bundle.entry[34].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 113784,
+                "diagnostics": "Bundle.entry[35].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 116948,
+                "diagnostics": "Bundle.entry[36].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            },
+            {
+              "location": {
+                "line": 1,
+                "column": 124020,
+                "diagnostics": "Bundle.entry[37].resource"
+              },
+              "message": "Best Practice Recommendation: In general, all observations should have a performer",
+              "severity": "WARNING"
+            }
+          ],
+          "completedAt": 1731564958.2678933,
+          "profileUrl": "https://shinny.org/ImplementationGuide/HRSN/StructureDefinition-SHINNYBundleProfile.json",
+          "igVersion": "1.1.0",
+          "valid": true
+        }
+      ],
+      "device": {
+        "deviceId": "127.0.1.1",
+        "deviceName": "vinod-OptiPlex"
+      },
+      "resourceType": "OperationOutcome"
+    }
+  }
