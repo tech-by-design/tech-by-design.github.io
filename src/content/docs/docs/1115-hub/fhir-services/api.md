@@ -9,11 +9,11 @@ title: API Endpoints
     - https://fhir.api.techbd.org/Bundle
     - https://fhir.api.techbd.org/Bundle/$validate
   - Flat file (CSV) API endpoints (mTLS enabled)
-    - https://fhir.api.techbd.org/flatfile/csv/Bundle (should be available on 01-01-2025)
-    - https://fhir.api.techbd.org/flatfile/csv/Bundle/$validate (should be available on 01-01-2025)
+    - https://fhir.api.techbd.org/flatfile/csv/Bundle
+    - https://fhir.api.techbd.org/flatfile/csv/Bundle/$validate 
   - CCDA API endpoints (In development)
-    - https://fhir.api.techbd.org/ccda/Bundle (should be available on 01-01-2025)
-    - https://fhir.api.techbd.org/ccda/Bundle/$validate (should be available on 01-01-2025)
+    - https://fhir.api.techbd.org/ccda/Bundle 
+    - https://fhir.api.techbd.org/ccda/Bundle/$validate 
   - Hub self-service UI endpoint (will not have mTLS by design)
     - https://hub.techbd.org/
   - Infrastructure Health Status UI endpoint
@@ -29,13 +29,13 @@ title: API Endpoints
     - https://no-cert-phi.fhir.api.qa.techbd.org/Bundle
     - https://no-cert-phi.fhir.api.qa.techbd.org/Bundle/$validate
   - Flat file (CSV) API endpoints (mTLS enabled)
-    - https://phi.fhir.api.qa.techbd.org/flatfile/csv/Bundle (should be available on 12-23-2024)
+    - https://phi.fhir.api.qa.techbd.org/flatfile/csv/Bundle 
     - https://phi.fhir.api.qa.techbd.org/flatfile/csv/Bundle/$validate
   - CCDA API endpoints (In development)
-    - https://phi.fhir.api.qa.techbd.org/ccda/Bundle (should be available on 12-27-2024)
-    - https://phi.fhir.api.qa.techbd.org/ccda/Bundle/$validate (should be available on 12-27-2024)
+    - https://phi.fhir.api.qa.techbd.org/ccda/Bundle 
+    - https://phi.fhir.api.qa.techbd.org/ccda/Bundle/$validate
   - SFTP Server
-    - phi.sftp.qa.techbd.org (should be available on 12-23-2024)
+    - phi.sftp.qa.techbd.org 
   - Hub self-service UI endpoint (will not have mTLS by design)
     - https://phi.hub.qa.techbd.org/
   - Infrastructure Health Status UI endpoint
@@ -47,13 +47,13 @@ title: API Endpoints
     - https://synthetic.fhir.api.stage.techbd.org/Bundle
     - https://synthetic.fhir.api.stage.techbd.org/Bundle/$validate
   - Flat file (CSV) API endpoints
-    - https://synthetic.fhir.api.stage.techbd.org/flatfile/csv/Bundle (should be available on 12-19-2024)
+    - https://synthetic.fhir.api.stage.techbd.org/flatfile/csv/Bundle 
     - https://synthetic.fhir.api.stage.techbd.org/flatfile/csv/Bundle/$validate
   - CCDA API endpoints (In development)
-    - https://synthetic.fhir.api.stage.techbd.org/ccda/Bundle (should be available on 12-26-2024)
-    - https://synthetic.fhir.api.stage.techbd.org/ccda/Bundle/$validate (should be available on 12-23-2024)
+    - https://synthetic.fhir.api.stage.techbd.org/ccda/Bundle 
+    - https://synthetic.fhir.api.stage.techbd.org/ccda/Bundle/$validate 
   - SFTP Server
-    - synthetic.sftp.stage.techbd.org (should be available on 12-19-2024)
+    - synthetic.sftp.stage.techbd.org 
   - Hub self-service UI endpoint
     - https://synthetic.hub.stage.techbd.org/
    
