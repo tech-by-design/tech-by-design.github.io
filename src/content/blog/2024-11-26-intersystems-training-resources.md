@@ -38,7 +38,7 @@ _URL: [InterSystems Online Learning](https://learning.intersystems.com/course/vi
   - Review and agree to hear about new products and services _(optional)_
   - Review Service Acknowledgement
 - Click **_Continue_**
-- You will be taken to another page with will ask you to paste in the registration token sent to the email address you provided in the previous step
+- You will be taken to another page which will ask you to paste in the registration token sent to the email address you provided in the previous step
   - Navigate to your email, and locate the email with the token
   - _Note, you may need to check your spam folder for this_
     - _If you experience issues with receiving the email token, please reach out to the InterSystems team for further assistance at: **online.training@intersystems.com**_ 
