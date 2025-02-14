@@ -79,6 +79,12 @@ To learn more about our self-service Help Desk, click the <strong>How do I visit
 					<p>Please note that the most ideal path for you to get assistance is likely listed above, via the Help Desk or other means, and the form submission may not be immediately responded to.</p>
 				</div>
 			</details>
+			<details>
+				<summary class="py-2 outline-none cursor-pointer focus:underline">Need to report a security incident?</summary>
+				<div class="px-4 pb-4">
+					<p>If you think you or someone else has gained access to information, records, or systems they're not supposed to have access to, please report it via email to <a href="mailto:incidentresponse@techbd.org">our security team</a>. In your report, please include a detailed description of the person (account ID, names, etc), the systems/records they were able to access, and how. Tech by Design appreciates your vigilance in these matters and we'll review your report immediately to understand the possible consequences of your report.</p>
+				</div>
+			</details>
 		</div>
 	</div>
 </section>
