@@ -42,23 +42,79 @@ import { Logo } from '../config'
             <div class='flex space-x-2'>
               {
                 NavigationLinks.map((item) => (
-                  <a
-                    href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
-                    target={item.target ? item.target : "_self"}
-                    class={
-                      (item.href.length > 0 && Astro.url.toString().includes(item.href)
-                        ? 'bg-orange text-spruce dark:bg-orange-500'
-                        : 'text-spruce hover:bg-orange-500 hover:text-spruce dark:text-orange dark:hover:bg-orange-800 dark:hover:text-spruce') +
-                      ' rounded-md px-2 py-2 text-lg font-medium'
-                    }
-                    aria-current={
-                      item.href.length > 0 && Astro.url.toString().includes(item.href)
-                        ? 'page'
-                        : undefined
-                    }
-                  >
-                    {item.name}
-                  </a>
+                  item.children && item.children?.length > 0 ? (
+                    <div class="relative group">
+                      <a
+                        href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
+                        target={item.target ? item.target : "_self"}
+                        class={
+                          ((item.href.length > 0 && Astro.url.toString().includes(item.href)) || item.children?.some((child) => Astro.url.toString().includes(child.href))
+                            ? 'bg-orange text-spruce dark:bg-orange-500'
+                            : 'text-spruce hover:bg-orange-500 hover:text-spruce dark:text-orange dark:hover:bg-orange-800 dark:hover:text-spruce') +
+                          ' rounded-md px-2 py-2 text-lg font-medium inline-flex items-center'
+                        }
+                        aria-current={
+                          item.href.length > 0 && Astro.url.toString().includes(item.href)
+                            ? 'page'
+                            : undefined
+                        }
+                      >
+                        {item.name}
+                        <svg 
+                          class="w-4 h-4 ml-1" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          viewBox="0 0 24 24"
+                        >
+                          <path 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            stroke-width="2" 
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </a>
+                      
+                      {/* Dropdown menu */}
+                      <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out z-50">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                          {item.children.map((child) => (
+                            <a
+                              href={child.href.startsWith('http') ? child.href : import.meta.env.BASE_URL + child.href}
+                              target={child.target ? child.target : "_self"}
+                              class={
+                                (child.href.length > 0 && Astro.url.toString().includes(child.href)
+                                  ? 'bg-orange-500 text-spruce'
+                                  : 'text-gray-700 dark:text-gray-200') +
+                                ' block px-4 py-2 text-sm hover:bg-orange-500 hover:text-spruce dark:hover:bg-orange-800'
+                              }
+                              role="menuitem"
+                            >
+                              {child.name}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <a
+                      href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
+                      target={item.target ? item.target : "_self"}
+                      class={
+                        (item.href.length > 0 && Astro.url.toString().includes(item.href)
+                          ? 'bg-orange text-spruce dark:bg-orange-500'
+                          : 'text-spruce hover:bg-orange-500 hover:text-spruce dark:text-orange dark:hover:bg-orange-800 dark:hover:text-spruce') +
+                        ' rounded-md px-2 py-2 text-lg font-medium'
+                      }
+                      aria-current={
+                        item.href.length > 0 && Astro.url.toString().includes(item.href)
+                          ? 'page'
+                          : undefined
+                      }
+                    >
+                      {item.name}
+                    </a>
+                  )
                 ))
               }
             </div>
@@ -91,16 +147,72 @@ import { Logo } from '../config'
       <div
         class='flex justify-center border-b-2 border-t-2 border-orange-500 bg-neutral-100 px-4 py-2 font-semibold dark:border-orange dark:bg-gray-800'
       >
-        {
-          NavigationLinks.map((item) => (
+      {
+        NavigationLinks.map((item) => (
+          item.children && item.children?.length > 0 ? (
+            <div class="relative group">
+              <a
+                href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
+                target={item.target ? item.target : "_self"}
+                class={
+                  ((item.href.length > 0 && Astro.url.toString().includes(item.href)) || item.children?.some((child) => Astro.url.toString().includes(child.href))
+                    ? 'bg-orange text-spruce dark:bg-orange-500'
+                    : 'text-spruce hover:bg-orange-500 hover:text-spruce dark:text-orange dark:hover:bg-orange-800 dark:hover:text-spruce') +
+                  ' rounded-md px-2 py-2 text-lg font-medium inline-flex items-center'
+                }
+                aria-current={
+                  item.href.length > 0 && Astro.url.toString().includes(item.href)
+                    ? 'page'
+                    : undefined
+                }
+              >
+                {item.name}
+                <svg 
+                  class="w-4 h-4 ml-1" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    stroke-width="2" 
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </a>
+              
+              {/* Dropdown menu */}
+              <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out z-50">
+                <div class="py-1" role="menu" aria-orientation="vertical">
+                  {item.children.map((child) => (
+                    <a
+                      href={child.href.startsWith('http') ? child.href : import.meta.env.BASE_URL + child.href}
+                      target={child.target ? child.target : "_self"}
+                      class={
+                        (child.href.length > 0 && Astro.url.toString().includes(child.href)
+                          ? 'bg-orange-500 text-spruce'
+                          : 'text-gray-700 dark:text-gray-200') +
+                        ' block px-4 py-2 text-sm hover:bg-orange-500 hover:text-spruce dark:hover:bg-orange-800'
+                      }
+                      role="menuitem"
+                    >
+                      {child.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ) : (
             <a
-              href={import.meta.env.BASE_URL + item.href}
-              class:list={[
-                item.href.length > 0 && Astro.url.toString().includes(item.href)
-                  ? 'bg-orange-800 text-orange-800 dark:bg-orange-500 dark:text-orange-100'
-                  : 'text-orange hover:bg-orange-800 hover:text-orange-800 dark:text-orange-800 dark:hover:bg-orange-500 dark:hover:text-orange-100',
-                ' px-2'
-              ]}
+              href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
+              target={item.target ? item.target : "_self"}
+              class={
+                (item.href.length > 0 && Astro.url.toString().includes(item.href)
+                  ? 'bg-orange text-spruce dark:bg-orange-500'
+                  : 'text-spruce hover:bg-orange-500 hover:text-spruce dark:text-orange dark:hover:bg-orange-800 dark:hover:text-spruce') +
+                ' rounded-md px-2 py-2 text-lg font-medium'
+              }
               aria-current={
                 item.href.length > 0 && Astro.url.toString().includes(item.href)
                   ? 'page'
@@ -109,8 +221,9 @@ import { Logo } from '../config'
             >
               {item.name}
             </a>
-          ))
-        }
+          )
+        ))
+      }
       </div>
     </div>
   </nav>
