@@ -34,11 +34,17 @@ export { default as DefaultSVG } from './assets/svg/undraw/undraw_my_feed.svg'
 export { default as DefaultImage } from './assets/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
-  { name: 'Home', href: '' },
-  { name: 'About', href: 'about' },
-  { name: 'Get Help', href: 'get-help' },
-  { name: 'Articles', href: 'blog' },
-  { name: 'Docs', href: 'docs' },
+  { name: 'Home', href: '', target: '_self' },
+  { name: 'About', href: 'about', target: '_self' },
+  { name: 'Solutions', href: '', target: '', children:
+    [
+      { name: 'Hub', href: 'hub', target: '_self' },
+      { name: 'Fusion', href: 'fusion', target: '_self' }
+    ]
+  },
+  { name: 'Get Help', href: 'get-help', target: '_self' },
+  { name: 'Articles', href: 'blog', target: '_self' },
+  { name: 'Docs', href: 'docs', target: '_self' },
   { name: 'Status', href: 'https://status.techbd.org', target: "blank" }
 ]
 
