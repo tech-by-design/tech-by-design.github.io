@@ -48,7 +48,7 @@ import { Logo } from '../config'
                         href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
                         target={item.target ? item.target : "_self"}
                         class={
-                          ((item.href.length > 0 && Astro.url.toString().includes(item.href)) || item.children?.some((child) => Astro.url.toString().includes(child.href))
+                          (((item.href && item.href !== '#' && item.href !== '' && Astro.url.toString().includes(item.href)) || item.children?.some((child) => Astro.url.toString().includes(child.href)))
                             ? 'bg-orange text-spruce dark:bg-orange-500'
                             : 'text-spruce hover:bg-orange-500 hover:text-spruce dark:text-orange dark:hover:bg-orange-800 dark:hover:text-spruce') +
                           ' rounded-md px-2 py-2 text-lg font-medium inline-flex items-center'
@@ -155,7 +155,7 @@ import { Logo } from '../config'
                 href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
                 target={item.target ? item.target : "_self"}
                 class={
-                  ((item.href.length > 0 && Astro.url.toString().includes(item.href)) || item.children?.some((child) => Astro.url.toString().includes(child.href))
+                  (((item.href && item.href !== '#' && item.href !== '' && Astro.url.toString().includes(item.href)) || item.children?.some((child) => Astro.url.toString().includes(child.href)))
                     ? 'bg-orange text-spruce dark:bg-orange-500'
                     : 'text-spruce hover:bg-orange-500 hover:text-spruce dark:text-orange dark:hover:bg-orange-800 dark:hover:text-spruce') +
                   ' rounded-md px-2 py-2 text-lg font-medium inline-flex items-center'
