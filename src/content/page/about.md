@@ -12,7 +12,7 @@ Technology by Design, or Tech by Design, was borne of a consortium of New York e
 
 ### Primary Objective
 
-The primary objective that Technology by Design was created to acheive is to analyze requirements, procure tools, and implement systems that are both world-class and economically sustainable. The end goal is referred to as Tech by Design's Shared Infrastructure Platform and will be made available to all New York state's qualifying entities (QEs). Along with providing high-quality servies and reducing costs, Tech by Design's Shared Infrastructure Platform will allow partnering QEs to continue to innovate and meet the needs that are specific to each of thei local communities.
+Tech by Design’s primary objective is to implement and maintain a robust, cost-effective technology platform to support the state’s QEs in delivering high-quality services to their participants. The platform branded Fusion is designed to improve operational efficiencies and enable innovation while maintaining economic sustainability.
 
 ### Secondary Objective
 
