@@ -14,7 +14,7 @@ Technology by Design believes in offering help publicly through a variety of res
 
 Use the button below to immediately log a ticket in our Help Desk.
 
-<a href="https://github.com/tech-by-design/help-desk-non-phi/issues/new?template=help-desk-ticket.md" class="inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none text-lg py-2 px-4 shadow-sm hover:shadow-md bg-spruce hover:bg-spruce-900 border-spruce-900 text-neutral rounded-lg transition antialiased no-underline">
+<a href="https://github.com/tech-by-design/help-desk-non-phi/issues/new/choose" class="inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none text-lg py-2 px-4 shadow-sm hover:shadow-md bg-spruce hover:bg-spruce-900 border-spruce-900 text-neutral rounded-lg transition antialiased no-underline">
 	Open a Help Desk Issue
 </a>
 
