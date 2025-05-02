@@ -52,22 +52,23 @@ socialImage: ../../assets/tech-by-design/techbd-hub.png
 The branch naming should follow this syntax:
 `{type}/{issue-number}/{short-description}`
 
-Assuming you're working a ticket numbered 1234
-feat/1234/add-dark-mode
-bug/1234/resolve-memory-leak
-hotfix/1234/payment-gateway-error
-refactor/1234/simplify-authentication-flow
-docs/1234/update-installation-guide
-test/1234/improve-user-service-coverage
+Assuming you're working a ticket numbered 1234, some examples would be:
+- `feat/1234/add-dark-mode`
+- `bug/1234/resolve-memory-leak`
+- `hotfix/1234/payment-gateway-error`
+- `refactor/1234/simplify-authentication-flow`
+- `docs/1234/update-installation-guide`
+- `test/1234/improve-user-service-coverage`
 
 All branches must include a issue number that is being worked on. If you do not have an issue number for the work you're doing, your pull request will be declined. It is a _must_ that you create an issue on the Engineering board before committing a branch or making a Pull Request.
 
 
 ## Commit Message Strategy
 
-### Commit Message Structure
+### Structure
 
 Adopt the conventional commits format:
+`{type}:{msg}`
 
 ### Commit Types
 
@@ -93,17 +94,17 @@ Adopt the conventional commits format:
 
 ### Example Commit Messages
 Good commit messages
-feat: Add user authentication module
-fix: Resolve login page memory leak
-docs: Update README with new installation steps
-refactor: Optimize query performance
-test: Add unit tests for user service
-chore: Update dependencies to latest versions
+- feat: Add user authentication module
+- fix: Resolve login page memory leak
+- docs: Update README with new installation steps
+- refactor: Optimize query performance
+- test: Add unit tests for user service
+- chore: Update dependencies to latest versions
 
 Bad commit messages
-"fixed stuff"
-"changes"
-"update"
+- fixed stuff
+- changes
+- update
 
 ## Workflow Recommendations
 
