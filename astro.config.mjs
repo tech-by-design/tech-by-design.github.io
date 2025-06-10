@@ -78,18 +78,10 @@ export default defineConfig({
 							label: "FHIR Services",
 							autogenerate: { directory: 'docs/1115-hub/fhir-services' }
 						}, {
-							label: "SFTP Services",
-							autogenerate: { directory: 'docs/1115-hub/sftp-services' }
+							label: "CSV Schema",
+							autogenerate: { directory: 'docs/1115-hub/csv-schema' }
 						}]
-				},
-				{
-					label: 'Developer Experience',
-					autogenerate: { directory: 'docs/dx' },
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'docs/reference' },
-				},
+				},				
 				{
 					label: 'Collaboration Hub',
 					items: [
@@ -108,6 +100,14 @@ export default defineConfig({
 							label: "Content",
 							autogenerate: { directory: 'docs/collaborationhub/content' }
 						}]
+				},
+				{
+					label: 'Developer Experience',
+					autogenerate: { directory: 'docs/dx' },
+				},
+				{
+					label: 'Reference',
+					autogenerate: { directory: 'docs/reference' },
 				},
 			],
 		}),
