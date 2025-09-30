@@ -44,7 +44,7 @@ export const NavigationLinks = [
   },
   { name: 'Get Help', href: 'get-help', target: '_self' },
   { name: 'Articles', href: 'blog', target: '_self' },
-  { name: 'Docs', href: 'docs', target: '_self' },
+  { name: 'Docs', href: 'docs/1115-hub/fhir-services', target: '_self' },
   { name: 'Status', href: 'https://status.techbd.org', target: "blank" }
 ]
 
