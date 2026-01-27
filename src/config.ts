@@ -45,7 +45,12 @@ export const NavigationLinks = [
   { name: 'Get Help', href: 'get-help', target: '_self' },
   { name: 'Articles', href: 'blog', target: '_self' },
   { name: 'Docs', href: 'docs/1115-hub/fhir-services', target: '_self' },
-  { name: 'Status', href: 'https://status.techbd.org', target: "blank" }
+  { name: 'Status', href: '#', target: '_self', children:
+    [
+      { name: 'QA', href: 'https://status-qa.techbd.org', target: '_blank' },
+      { name: 'Production', href: 'https://status.techbd.org', target: '_blank' }
+    ]
+  }
 ]
 
 export const PAGE_SIZE = 6
