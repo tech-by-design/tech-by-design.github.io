@@ -4,6 +4,46 @@ import { NavigationLinks } from '../config'
 import Search from '../components/search.astro'
 import Theme from '../components/theme.astro'
 import { Logo } from '../config'
+
+// Helper function to check if a path is active
+function isPathActive(href: string, currentPathname: string, baseUrl: string): boolean {
+  // For external links, don't mark as active
+  if (href.startsWith('http')) return false
+  
+  // Handle home page (empty href)
+  if (!href || href === '') {
+    // Home is active if pathname is exactly base URL or root
+    const normalizedBase = baseUrl === '/' ? '' : baseUrl.replace(/\/$/, '')
+    const normalizedPath = currentPathname.replace(/\/$/, '')
+    return normalizedPath === normalizedBase || normalizedPath === '' || normalizedPath === '/'
+  }
+  
+  // Skip hash links
+  if (href === '#') return false
+  
+  // Build the expected path - currentPathname already includes base URL
+  const normalizedHref = href.startsWith('/') ? href.slice(1) : href
+  const expectedPath = baseUrl === '/' 
+    ? '/' + normalizedHref 
+    : (baseUrl.endsWith('/') ? baseUrl : baseUrl + '/') + normalizedHref
+  
+  // Normalize both paths for comparison
+  const normalizedExpected = expectedPath.replace(/\/+/g, '/').replace(/\/$/, '') || '/'
+  const normalizedCurrent = currentPathname.replace(/\/+/g, '/').replace(/\/$/, '') || '/'
+  
+  // Exact match
+  if (normalizedCurrent === normalizedExpected) return true
+  
+  // Check if current path starts with the expected path (for nested routes)
+  // Ensure we match full path segments, not substrings (e.g., 'hub' shouldn't match 'hubspot')
+  if (normalizedCurrent.startsWith(normalizedExpected + '/')) return true
+  
+  return false
+}
+
+// Get current pathname (already includes base URL in Astro)
+const currentPathname = Astro.url.pathname
+const baseUrl = import.meta.env.BASE_URL || '/'
 ---
 
 <div class='relative h-16 w-full'>
@@ -48,13 +88,13 @@ import { Logo } from '../config'
                         href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
                         target={item.target ? item.target : "_self"}
                         class={
-                          (((item.href && item.href !== '#' && item.href !== '' && Astro.url.toString().includes(item.href)) || item.children?.some((child) => Astro.url.toString().includes(child.href)))
+                          (item.children?.some((child) => isPathActive(child.href, currentPathname, baseUrl))
                             ? 'bg-orange text-spruce dark:bg-orange-500'
                             : 'text-spruce hover:bg-orange-500 hover:text-spruce dark:text-orange dark:hover:bg-orange-800 dark:hover:text-spruce') +
                           ' rounded-md px-2 py-2 text-lg font-medium inline-flex items-center'
                         }
                         aria-current={
-                          item.href.length > 0 && Astro.url.toString().includes(item.href)
+                          item.children?.some((child) => isPathActive(child.href, currentPathname, baseUrl))
                             ? 'page'
                             : undefined
                         }
@@ -83,7 +123,7 @@ import { Logo } from '../config'
                               href={child.href.startsWith('http') ? child.href : import.meta.env.BASE_URL + child.href}
                               target={child.target ? child.target : "_self"}
                               class={
-                                (child.href.length > 0 && Astro.url.toString().includes(child.href)
+                                (isPathActive(child.href, currentPathname, baseUrl)
                                   ? 'bg-orange-500 text-spruce'
                                   : 'text-gray-700 dark:text-gray-200') +
                                 ' block px-4 py-2 text-sm hover:bg-orange-500 hover:text-spruce dark:hover:bg-orange-800'
@@ -101,13 +141,13 @@ import { Logo } from '../config'
                       href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
                       target={item.target ? item.target : "_self"}
                       class={
-                        (item.href.length > 0 && Astro.url.toString().includes(item.href)
+                        (isPathActive(item.href, currentPathname, baseUrl)
                           ? 'bg-orange text-spruce dark:bg-orange-500'
                           : 'text-spruce hover:bg-orange-500 hover:text-spruce dark:text-orange dark:hover:bg-orange-800 dark:hover:text-spruce') +
                         ' rounded-md px-2 py-2 text-lg font-medium'
                       }
                       aria-current={
-                        item.href.length > 0 && Astro.url.toString().includes(item.href)
+                        isPathActive(item.href, currentPathname, baseUrl)
                           ? 'page'
                           : undefined
                       }
@@ -155,13 +195,13 @@ import { Logo } from '../config'
                 href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
                 target={item.target ? item.target : "_self"}
                 class={
-                  (((item.href && item.href !== '#' && item.href !== '' && Astro.url.toString().includes(item.href)) || item.children?.some((child) => Astro.url.toString().includes(child.href)))
+                  (item.children?.some((child) => isPathActive(child.href, currentPathname, baseUrl))
                     ? 'bg-orange text-spruce dark:bg-orange-500'
                     : 'text-spruce hover:bg-orange-500 hover:text-spruce dark:text-orange dark:hover:bg-orange-800 dark:hover:text-spruce') +
                   ' rounded-md px-2 py-2 text-lg font-medium inline-flex items-center'
                 }
                 aria-current={
-                  item.href.length > 0 && Astro.url.toString().includes(item.href)
+                  item.children?.some((child) => isPathActive(child.href, currentPathname, baseUrl))
                     ? 'page'
                     : undefined
                 }
@@ -190,7 +230,7 @@ import { Logo } from '../config'
                       href={child.href.startsWith('http') ? child.href : import.meta.env.BASE_URL + child.href}
                       target={child.target ? child.target : "_self"}
                       class={
-                        (child.href.length > 0 && Astro.url.toString().includes(child.href)
+                        (isPathActive(child.href, currentPathname, baseUrl)
                           ? 'bg-orange-500 text-spruce'
                           : 'text-gray-700 dark:text-gray-200') +
                         ' block px-4 py-2 text-sm hover:bg-orange-500 hover:text-spruce dark:hover:bg-orange-800'
@@ -208,13 +248,13 @@ import { Logo } from '../config'
               href={item.href.startsWith('http') ? item.href : import.meta.env.BASE_URL + item.href}
               target={item.target ? item.target : "_self"}
               class={
-                (item.href.length > 0 && Astro.url.toString().includes(item.href)
+                (isPathActive(item.href, currentPathname, baseUrl)
                   ? 'bg-orange text-spruce dark:bg-orange-500'
                   : 'text-spruce hover:bg-orange-500 hover:text-spruce dark:text-orange dark:hover:bg-orange-800 dark:hover:text-spruce') +
                 ' rounded-md px-2 py-2 text-lg font-medium'
               }
               aria-current={
-                item.href.length > 0 && Astro.url.toString().includes(item.href)
+                isPathActive(item.href, currentPathname, baseUrl)
                   ? 'page'
                   : undefined
               }
