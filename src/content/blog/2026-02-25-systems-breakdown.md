@@ -1,5 +1,5 @@
 --- 
-title: Breakdown of Technology by Design Systems 
+title: Overview of Technology by Design Systems 
 description: Read about different systems in the Technology by Design ecosystem which users can request access to
 author: default
 pubDate: 2026-02-26T00:00:00.000Z
@@ -7,19 +7,19 @@ coverSVG: ../../assets/tech-by-design/pri-logo_Full-Color.svg
 socialImage: ../../assets/tech-by-design/pri-logo_Full-Color.png
 categories:
   - fusion
-  - 1115
+  - "1115"
 tags:
   - reference
   - fusion
-  - 1115
+  - "1115"
 ---
 
-# Breakdown of Technology by Design Systems
+# Overview of Technology by Design Systems
 
 _Request access here: [Tech by Design Access Request Form](https://techbd.org/submit-form/access-request/)_
 
 ## Systems
-At a high level, here is a breakdown of the different systems which exist in the Technology by Design ecosystem.
+At a high level, here is an overview of the different systems which exist in the Technology by Design ecosystem.
 - GitHub
   - This is the code and documentation library
   - There are a few DIFFERENT libraires (e.g. Repositories) which exists under the Tech by Design organization
@@ -41,7 +41,7 @@ At a high level, here is a breakdown of the different systems which exist in the
   - Transformation tool that moves data from inbound sources into the database
   - There are various instances/environments which exist under Tech by Design, so when requesting access for this, it is imperative to specify what instance and environment you are requesting access to. For example: RRHIO DEV, etc.
   - There are different environments a user can be provisioned with access to - DEV / QA / PROD
-  - A breakdown of available environments can be found [here](https://github.com/tech-by-design/help-desk-non-phi/wiki/Nexus#bridgelink-environments).
+  - An overview of available environments can be found [here](https://github.com/tech-by-design/help-desk-non-phi/wiki/Nexus#bridgelink-environments).
 - Enlighten
   - Enlighten is TxD's tool for monitoring channels once they are live
   - Anyone who needs to manage/monitor channels would need access
