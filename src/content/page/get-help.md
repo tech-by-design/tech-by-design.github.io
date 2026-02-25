@@ -70,6 +70,7 @@ To learn more about our self-service Help Desk, click the <strong>How do I visit
 				<summary class="py-2 outline-none cursor-pointer focus:underline">How do I get access?</summary>
 				<div class="px-4 pb-4">
 					<p>If you're looking for access to a particular system inside the Tech by Design ecosystem but running into a login that you don't have access to, please visit <a href="/submit-form/access-request">this link</a> and complete the form to enter an access request.</p>
+					<p>For an overview of Technology By Design's systems, please see this <a href="/blog/2026-02-25-systems-breakdown" target="_blank">article</a>.</p>
 				</div>
 			</details>
             <details>
