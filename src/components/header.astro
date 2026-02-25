@@ -4,6 +4,7 @@ import { NavigationLinks } from '../config'
 import Search from '../components/search.astro'
 import Theme from '../components/theme.astro'
 import { Logo } from '../config'
+import { LogoReverse } from '../config'
 
 // Helper function to check if a path is active
 function isPathActive(href: string, currentPathname: string, baseUrl: string): boolean {
@@ -76,7 +77,8 @@ const baseUrl = import.meta.env.BASE_URL || '/'
         </div>
         <div class='flex flex-1 items-center justify-center lg:items-stretch lg:justify-start'>
           <div class='flex flex-shrink-0 items-center'>
-            <img class='block h-8 w-8 dark:bg-neutral-100' src={Logo.src} alt='Logo' />
+            <img class="block h-8 w-8 dark:hidden" src={Logo.src} alt="Logo" />
+            <img class="block h-8 w-8 hidden dark:block" src={LogoReverse.src} alt="Logo" />
           </div>
           <div class='hidden lg:mx-4 lg:block'>
             <div class='flex space-x-2'>

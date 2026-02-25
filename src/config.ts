@@ -28,6 +28,7 @@ export const SiteMetadata = {
 }
 
 export { default as Logo } from './assets/tech-by-design/logomark_Full-Color.svg'
+export { default as LogoReverse } from './assets/tech-by-design/logomark_Reverse.svg'
 export { default as LogoImage } from './assets/tech-by-design/logomark_Full-Color.svg'
 export { default as FeaturedSVG } from './assets/tech-by-design/pri-logo_Reverse.svg'
 export { default as DefaultSVG } from './assets/svg/undraw/undraw_my_feed.svg'
